@@ -1,0 +1,17 @@
+<!-- scores/templates/scores/edit_score.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Football Score</title>
+</head>
+<body>
+    <h1>Edit Football Score (ID: {{ score_id }})</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Save Changes</button>
+    </form>
+    <a href="{% url 'score_list' %}">Back to Scores</a>
+</body>
+</html>

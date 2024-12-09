@@ -1,0 +1,98 @@
+.containerz {
+    position: fixed;
+    top:50%;
+    left: 50%;
+}
+
+.btn-primary {
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.circle-menu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 300px;
+    margin-top: -150px;
+    margin-left: -150px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transform: scale(0);
+    transition: transform 0.5s ease;
+}
+
+.circle-menu.visible {
+    transform: scale(1);
+}
+
+.circle-button, .cancel-button {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightblue;
+}
+
+.circle-button:hover {
+    transform: scale(1.1);
+}
+
+.cancel-button {
+    width: 70px;
+    height: 70px;
+    background-color: #f44336;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    z-index: 10; /* Bring to front */
+}
+
+.cancel-button:hover {
+    background-color: #d32f2f;
+    transform: scale(1.1);
+}
+
+.circle-button:nth-child(1) {
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.circle-button:nth-child(2) {
+    top: 50%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+}
+
+.circle-button:nth-child(3) {
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.circle-button:nth-child(4) {
+    top: 50%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+}
+
+.cancel-button {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

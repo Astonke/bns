@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <style>
+        /* Reset some basic styles for consistency across browsers */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f2f5;
+            background-image:url('https://th.bing.com/th/id/R.9205148cec395f82cd36230203fe8df5?rik=JGj3qZF1jC3U4A&pid=ImgRaw&r=0');
+            background-size:cover;
+            background-repeat:no-repeat;
+        }
+
+        .container {
+            text-align: center;
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 24px;
+            color: #333333;
+            margin-bottom: 20px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        .button {
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: 600;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-payment {
+            background-color: #4caf50;
+            color: white;
+        }
+
+        .btn-payment:hover {
+            background-color: #45a049;
+        }
+
+        .btn-verify {
+            background-color: #2196f3;
+            color: white;
+        }
+
+        .btn-verify:hover {
+            background-color: #1e88e5;
+        }
+
+        /* Responsive for small screens */
+        @media (max-width: 600px) {
+            .buttons {
+                flex-direction: column;
+            }
+
+            .button {
+                width: 100%;
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>What would you like to do?</h1>
+    <div class="buttons">
+        <button class="button btn-payment" onclick="window.location.href='dash';">Make Payment</button>
+        <button class="button btn-verify" onclick="window.location.href='proof';">Verify Payment</button>
+    </div>
+</div>
+
+</body>
+</html>

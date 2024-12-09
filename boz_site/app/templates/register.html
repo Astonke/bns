@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bozbet/client/REGISTER</title>
+    {% load static %}
+    <script src="{% static 'js/script2.js' %}"></script>
+</head>
+<body>
+
+    <div class="slogin">
+        <h1>Bozbet</h1>
+        <h2 style="color: red;">Register..</h2>
+        <form action="{{url}}register/">
+            {% csrf_token %}
+        <input type="text" class="idf" id="id_name" name="name" placeholder="name:" required>
+        <br><br>
+        <input type="text" class="idf" id="id_email" name="email" placeholder="Email"required>
+        <br><br>
+        <input type="text" class="idf" id="m_number" name="mobile" placeholder="mobile_number" required>
+        <br><br>
+        <input type="password" id="psk_log" class="psk" placeholder="password" name="password" autocomplete="cc-csc" required><br><br>
+        <input type="password" id="psk_log2" class="psk" placeholder="confirm_password" autocomplete="cc-csc" required><br><br>
+        <input type="hidden" id="ip_address_input" name="ip_address" value="">
+        <button id="login" class="login" type="submit">sign_up</button>
+        </form>
+    </div>
+
+</body>
+
+
+<style>
+    .slogin h2{
+        border: 0.1px solid white;
+        background-color: transparent;
+        border-radius: 1px;
+    }
+    .slogin{
+        text-align: center;
+        align-items: center;
+        padding: 10px;
+        border: 0.1px solid grey;
+        background-color: transparent;
+        border-radius: 12px;
+        width: 60vw;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white; 
+    }
+    h1{
+        font-size: 45px;
+        color: aqua;
+        
+    }
+    button{
+        background-color: aqua;
+        transform: scale(1.85);
+        border-radius: 2px;
+    }
+    body{
+         display: flex;
+         background-image: url('https://t4.ftcdn.net/jpg/02/88/68/21/360_F_288682192_Mi7iUPqCtj8XJ0UDgeRw2IVgRW5rmG2z.webp');
+         background-repeat: repeat;
+         background-size: cover;
+         background-position: 0px 60px;
+         background-color: rgba(56, 49, 49, 0.993);
+         background-clip: padding-box;
+         height: 100vh;
+         width: 100vw;
+         color: white;
+    }
+    .alert{
+        background-color: red;
+    }
+</style>
+<script>
+    // Function to fetch the user's public IP using ipify API
+    async function fetchUserIp() {
+        try {
+            const response = await fetch('https://api.ipify.org?format=json');
+            const data = await response.json();
+            return data.ip;  // Return the IP address
+        } catch (error) {
+            console.error('Error fetching IP address:', error);
+            return null;
+        }
+    }
+
+    // Function to assign the fetched IP to the hidden input field
+    async function assignIpToInput() {
+        const userIp = await fetchUserIp();  // Fetch the public IP
+
+        if (userIp) {
+            // Find the hidden input by its ID and set its value
+            document.getElementById('ip_address_input').value = userIp;
+            console.log('IP Address assigned to hidden input:', userIp);
+        } else {
+            console.error('Failed to assign IP address');
+        }
+    }
+
+    // Call the function when the page is loaded
+    window.onload = function() {
+        assignIpToInput();
+    };
+</script>
+
+
+</html>

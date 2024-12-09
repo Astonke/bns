@@ -1,0 +1,21 @@
+#!/bin/bash
+root_prj=/home/aston/bozbet/bozbet/zsite/boz_site
+file=$root_prj/media/shell_scripts/use.txt
+html_path=$root_prj/app/templates
+app_path=$root_prj/app
+echo $(pwd)
+cd $app_path
+echo '' > $html_path/temp.html
+cp $html_path/home_def.html $html_path/temp.html
+
+num_lines=$(wc -l < $file)
+echo "The file '$file' has $num_lines lines."
+
+
+#config data into files
+grep ':' $file > $root_prj/media/shell_scripts/times.txt #filter time
+grep '-' $file > $root_prj/media/shell_scripts/mat.txt #filter games 
+awk '/\./' $file | awk '!/[a-zA-Z]+$/' > $root_prj/media/shell_scripts/odds.txt #filter odds
+grep -v ':' $file | grep -v '-' | awk '! /\./' | awk '!/[a-zA-Z]+$/'> $root_prj/media/shell_scripts/ids.txt
+
+python3 $app_path/update_cont.py

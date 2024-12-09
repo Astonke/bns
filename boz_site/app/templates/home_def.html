@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover BozBet - the ultimate tax-free betting platform offering the best customer experience! Simple, intuitive, and designed to win. Bet smarter, play harder, and enjoy unmatched rewards. Join BozBet today!">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'css/test.css' %}">
+    {% if def_js %}
+    <script src="{% static 'js/script.js' %}"></script>
+    {% endif %}
+    <script src="{% static 'js/extra.js' %}"></script>
+    <link rel="icon" type="image/svg+xml" href="{% static 'img/bozbet.png' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+<style>
+        .odds-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 10px;
+        }
+        .odds-table th, .odds-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+            width: 50%; /* Enforce two equal columns */
+        }
+        .odds-table th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+        .hid_g {
+            width: 100%;
+        }
+
+.submit-btn{
+        background-color: greenyellow;
+        border-radius: 2px;
+        transform: scale(1.3);
+        position: relative;
+        left: 15%;
+    }
+
+    /* Style the clear button */
+    #clearBetSlip {
+        display: block;
+        margin-top: 20px;
+        padding: 10px 20px;
+        background-color: #ff5a5a;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transform: scale(0.8)
+    }
+
+      </style>   
+<style>
+
+    /* Styling the search icon */
+    .search-icon {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 1000;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    /* Popup container */
+    .search-popup {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1050;
+      display: none;
+      background-color: white;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      border-radius: 8px;
+      width: 90%;
+      max-width: 400px;
+      animation: fadeIn 0.3s;
+    }
+
+    /* Fading effect for popup 
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }*/
+
+    /* Overlay to dim the background */
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 1040;
+      display: none;
+    }
+
+    /* Align input and button */
+    .search-popup .input-group {
+      margin-top: 10px;
+    }
+  </style>
+    <style>
+        body.light-mode {
+            background-color: #ffffff; /* Light mode background color */
+            color: #000000; /* Light mode text color */
+        }
+        body.dark-mode {
+            background-color: #000000; /* Dark mode background color */
+            color: #ffffff; /* Dark mode text color */
+        }
+        .depo{
+            background-color: transparent;
+            color: orange;
+            position: absolute;
+            right: 18%;
+            top: 50%;
+            transform: scale(1);
+            border:1px solid transparent;
+            border-radius: 28%;
+        }
+        .hidx{
+            display:none;
+        }
+        .label_style{
+            position:relative;
+            left:10px
+        }
+        .match-container{
+            overflow-x:auto;
+        }
+        .menu{
+            position:fixed;
+            top:7%;
+            right:14%;
+        }
+        header{
+            width: 70%;
+            border-radius: 3px;
+            
+        }
+        #lv{position: absolute;
+        left: 60%;
+        background-color: red;
+        border-radius: 35%;
+        }
+        .match-container{
+            background-color: lightblue;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        #totalOdds{
+            background-color: blue;
+            color:gold;
+        }
+        #ps_label{
+        color:aqua;
+        background-color: orange;
+        position: relative;
+        top:26px;
+        left:23%;
+    }
+    #possible{
+        background-color: darkorchid;
+    }
+    #about{
+        position:absolute;
+        left:90%;
+        top:8px;
+    }
+    #chat{
+        position:absolute;
+        left:78%;
+        top:8px; 
+    }
+    </style>
+    <title>BozBet</title>
+</head>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const searchIcon = document.getElementById("search-icon");
+      const searchPopup = document.getElementById("search-popup");
+      const overlay = document.getElementById("overlay");
+      const closePopup = document.getElementById("close-popup");
+      const searchBar = document.getElementById("search-bar");
+      const searchButton = document.getElementById("search-button");
+      const searchResults = document.getElementById("search-results");
+      const contentContainer = document.getElementById("content-container");
+      const containers = Array.from(contentContainer.getElementsByClassName("button-container"));
+
+      // Show the popup
+      function showPopup() {
+        searchPopup.style.display = "block";
+        overlay.style.display = "block";
+      }
+
+      // Hide the popup
+      function hidePopup() {
+        searchPopup.style.display = "none";
+        overlay.style.display = "none";
+        searchBar.value = "";
+        searchResults.innerHTML = "";
+      }
+
+      // Perform search
+    function performSearch() {
+  const searchTerm = searchBar.value.toLowerCase();
+  const closestMatch = containers.find(container =>
+    container.textContent.toLowerCase().includes(searchTerm)
+  );
+
+  // Clear previous results
+  searchResults.innerHTML = "";
+
+  if (closestMatch) {
+    // Remove the container from its original parent and append it to the popup
+    contentContainer.removeChild(closestMatch);
+    searchResults.appendChild(closestMatch);
+
+    // Add a "restore" button to return the container to the main content area
+    const restoreButton = document.createElement("button");
+    restoreButton.classList.add("btn", "btn-secondary", "mt-3");
+    restoreButton.textContent = "Restore";
+    restoreButton.onclick = () => {
+      searchResults.innerHTML = ""; // Clear the popup
+      contentContainer.appendChild(closestMatch); // Return the container
+    };
+    searchResults.appendChild(restoreButton);
+  } else {
+    searchResults.innerHTML = "<p>No matches found.</p>";
+  }
+}
+
+
+      // Event listeners
+      searchIcon.addEventListener("click", showPopup);
+      overlay.addEventListener("click", hidePopup);
+      closePopup.addEventListener("click", hidePopup);
+      searchButton.addEventListener("click", performSearch);
+      searchBar.addEventListener("keypress", (e) => {
+        if (e.key === "Enter") {
+          performSearch();
+        }
+      });
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") {
+          hidePopup();
+        }
+      });
+    });
+  </script>
+<script>
+    function rev_hid(clickedContainer) {
+        console.log(clickedContainer); // Debugging output
+        const hiddenElement = clickedContainer.querySelector(".hid_cont"); // Updated selector for class
+        console.log(hiddenElement); // Debugging output
+    
+        if (hiddenElement) {
+            if (hiddenElement.style.display === 'none') {
+                hiddenElement.style.display = 'block';
+            } else {
+                hiddenElement.style.display = 'none';
+            }
+        } else {
+            console.log("No element with class 'hid_cont' found within clicked container.");
+        }
+    }
+</script>
+<body>
+    <header>
+        <h1>BozBet</h1>
+        <nav>
+            <ul>&nbsp;
+                <!--<li><a href="#upcoming-matches">Matches</a></li>-->
+                <li id="lv"><a href="/live-scores">Live</a></li>
+                <li id='about' onclick='window.location.href="/about/"'><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="blue" class="bi bi-info-circle" viewBox="0 0 16 16">
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                    <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+                  </svg></li>
+                  <li id='chat' onclick='window.location.href="/chat/"'><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chat-dots" viewBox="0 0 16 16">
+                    <path d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+                    <path d="m2.165 15.803.02-.004c1.83-.363 2.948-.842 3.468-1.105A9 9 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.4 10.4 0 0 1-.524 2.318l-.003.011a11 11 0 0 1-.244.637c-.079.186.074.394.273.362a22 22 0 0 0 .693-.125m.8-3.108a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6-3.004 6-7 6a8 8 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a11 11 0 0 0 .398-2"/>
+                  </svg></li>
+                {% if show_button %}
+                <style>
+                    .sign_in{
+                        background-color: blue;
+                        color: orange;
+                        position: absolute;
+                        left: 70%;
+                        transform: scale(1);
+                        border-radius: 2px;
+                        top: 65%;
+                    }
+                </style>
+                <button id="sign" class="sign_in" onclick="window.location.href='login_page/'">Sign_in</button>
+                {% endif %}
+                {% if show_depo %}
+                <script>
+                    // Function to fetch the user's public IP address using ipify
+                    async function getUserIp() {
+                        try {
+                            const response = await fetch('https://api.ipify.org?format=json');
+                            const data = await response.json();
+                            return data.ip;  // Return the IP address
+                        } catch (error) {
+                            console.error('Error fetching IP address:', error);
+                            return null;
+                        }
+                    }
+                
+                    // Function to send IP and mobile number to the backend on every page load and reload
+                    async function sendIpToBackend(mobile) {
+                        const userIpAddress = await getUserIp();  // Fetch the user's IP address
+                
+                        if (userIpAddress) {
+                            // Send the IP address and mobile number to the backend
+                            fetch(`check-ip/`, {
+                                method: 'POST',
+                                headers: {
+                                    'Content-Type': 'application/json',
+                                    'X-CSRFToken': '{{ csrf_token }}'  // Include CSRF token for Django
+                                },
+                                body: JSON.stringify({
+                                    'ip_address': userIpAddress,
+                                    'mobile': mobile
+                                })
+                            })
+                            .then(response => response.json())
+                            .then(data => {
+                                if (data.status === 'ok') {
+                                    console.log("IP and mobile check passed, continue as normal.");
+                                    //alert('IP is ok.');
+                                    // Continue with the page load
+                                } else if (data.status === 'redirect') {
+                                   //alert("IP and mobile check failed, redirecting to: " + data.redirect_url);
+                                    // Redirect to another page
+                                    window.location.href = `/${data.redirect_url}`;
+                                }
+                            })
+                            .catch(error => console.error('Error sending IP and mobile to backend:', error));
+                        } else {
+                            console.error('Failed to retrieve IP address');
+                        }
+                    }
+                
+                    // Function to initiate sending the IP and mobile to backend
+                    function initiateIpCheck() {
+                        const mobileNumberElement = document.getElementById('usrdata');
+                        const mobileNumber = mobileNumberElement ? mobileNumberElement.value : null;  // Get the mobile number from the page
+                        if (true) {
+                            sendIpToBackend(mobileNumber);
+                        } else {
+                            console.error("Mobile number not found");
+                        }
+                    }
+                
+                    // Call the function on page load and on page reload
+                    window.onload = function() {
+                        initiateIpCheck();  // Send IP and mobile on page load
+                    };
+                
+                    window.onpageshow = function() {
+                        initiateIpCheck();  // Also handle page reloads and cached pages
+                    };
+                
+                </script>
+                
+                <bz id="deposit" class="depo" onclick="window.location.href=`/home/${get_enc_text()}/pay/`">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="37" height="32" fill="currentColor" class="bi bi-coin" viewBox="0 0 16 16">
+                    <path d="M5.5 9.511c.076.954.83 1.697 2.182 1.785V12h.6v-.709c1.4-.098 2.218-.846 2.218-1.932 0-.987-.626-1.496-1.745-1.76l-.473-.112V5.57c.6.068.982.396 1.074.85h1.052c-.076-.919-.864-1.638-2.126-1.716V4h-.6v.719c-1.195.117-2.01.836-2.01 1.853 0 .9.606 1.472 1.613 1.707l.397.098v2.034c-.615-.093-1.022-.43-1.114-.9zm2.177-2.166c-.59-.137-.91-.416-.91-.836 0-.47.345-.822.915-.925v1.76h-.005zm.692 1.193c.717.166 1.048.435 1.048.91 0 .542-.412.914-1.135.982V8.518z"/>
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                    <path d="M8 13.5a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11m0 .5A6 6 0 1 0 8 2a6 6 0 0 0 0 12"/>
+                  </svg></bz>
+                <!--<script src="{% static 'js/scrsuper.js' %}"></script>-->
+                {% endif %}
+            </ul>
+        </nav>
+    </header>&nbsp;&nbsp;
+   
+        {% if show_depo %}
+   
+    <div class="containerz">
+        <!--<button id="mainButton" class="btn btn-primary btn-lg">Click Me</button>-->
+        <div id="circleMenu" class="circle-menu hidden">
+            <button class="circle-button btn btn-secondary" onclick="profile_page()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+              </svg></button>
+            <button class="circle-button btn btn-secondary" id='slips' onclick='pending()'>
+                <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="currentColor" class="bi bi-journal-check" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M10.854 6.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 8.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
+                <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2"/>
+                <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1z"/>
+              </svg></button>
+            <button class="circle-button btn btn-secondary" id="toggle-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="currentColor" class="bi bi-sliders" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M11.5 2a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3M9.05 3a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0V3zM4.5 7a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3M2.05 8a2.5 2.5 0 0 1 4.9 0H16v1H6.95a2.5 2.5 0 0 1-4.9 0H0V8zm9.45 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3m-2.45 1a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0v-1z"/>
+              </svg></button>
+            <button class="circle-button btn btn-secondary" onclick="finance_page()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="currentColor" class="bi bi-wallet2" viewBox="0 0 16 16">
+                <path d="M12.136.326A1.5 1.5 0 0 1 14 1.78V3h.5A1.5 1.5 0 0 1 16 4.5v9a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 13.5v-9a1.5 1.5 0 0 1 1.432-1.499zM5.562 3H13V1.78a.5.5 0 0 0-.621-.484zM1.5 4a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5z"/>
+              </svg></button>
+            <button class="cancel-button btn btn-danger" onclick='hide_menu()'>
+                <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+                  </svg>
+            </button>
+        </div>
+    </div>
+    <!-- Bootstrap and jQuery Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // script.js
+
+
+    const mainButton = document.getElementById('menu');
+    const circleMenu = document.getElementById('circleMenu');
+    // Hide the menu when the cancel button is clicked
+    const cancelButton = circleMenu.querySelector('.cancel-button');
+
+function rev_menu(){
+    //circleMenu.classList.toggle('visible');
+    circleMenu.style.toggle('visible')
+}
+
+
+function hide_menu(){
+    circleMenu.classList.remove('visible');
+}
+
+
+function get_enc_text(){
+    // Get the current URL
+const currentUrl = window.location.href;
+
+// Split the URL by '/' and filter out any empty strings
+const parts = currentUrl.split('/').filter(Boolean);
+
+// Find the longest string in the URL parts
+const longestString = parts.reduce((longest, current) => 
+    current.length > longest.length ? current : longest, "");
+
+return longestString;
+    }
+
+// redirection to finance
+function finance_page(){
+ // Construct the new URL for redirection
+ const baseUrl = window.location.origin; // Get the base URL (e.g., http://192.168.0.108:8080)
+    const newUrl = `${baseUrl}/finance/${get_enc_text()}`;
+
+    // Redirect to the new URL
+    window.location.href = newUrl;
+}
+
+// redirection to finance
+function profile_page(){
+ // Construct the new URL for redirection
+ const baseUrl = window.location.origin; // Get the base URL (e.g., http://192.168.0.108:8080)
+    const newUrl = `${baseUrl}/profile/${get_enc_text()}`;
+
+    // Redirect to the new URL
+    window.location.href = newUrl;
+}
+
+function pending() {
+    // Construct the new URL for redirection
+    const baseUrl = window.location.origin; // Get the base URL (e.g., http://192.168.0.108:8080)
+    const newUrl = `${baseUrl}/pending/${get_enc_text()}`;
+
+    // Redirect to the new URL
+    window.location.href = newUrl;
+}
+
+    </script>
+        <button id='menu' class='menu' onclick='rev_menu()'>
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="27" fill="currentColor" class="bi bi-house-gear-fill" viewBox="0 0 16 16">
+            <path d="M7.293 1.5a1 1 0 0 1 1.414 0L11 3.793V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v3.293l2.354 2.353a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708z"/>
+            <path d="M11.07 9.047a1.5 1.5 0 0 0-1.742.26l-.02.021a1.5 1.5 0 0 0-.261 1.742 1.5 1.5 0 0 0 0 2.86 1.5 1.5 0 0 0-.12 1.07H3.5A1.5 1.5 0 0 1 2 13.5V9.293l6-6 4.724 4.724a1.5 1.5 0 0 0-1.654 1.03"/>
+            <path d="m13.158 9.608-.043-.148c-.181-.613-1.049-.613-1.23 0l-.043.148a.64.64 0 0 1-.921.382l-.136-.074c-.561-.306-1.175.308-.87.869l.075.136a.64.64 0 0 1-.382.92l-.148.045c-.613.18-.613 1.048 0 1.229l.148.043a.64.64 0 0 1 .382.921l-.074.136c-.306.561.308 1.175.869.87l.136-.075a.64.64 0 0 1 .92.382l.045.149c.18.612 1.048.612 1.229 0l.043-.15a.64.64 0 0 1 .921-.38l.136.074c.561.305 1.175-.309.87-.87l-.075-.136a.64.64 0 0 1 .382-.92l.149-.044c.612-.181.612-1.049 0-1.23l-.15-.043a.64.64 0 0 1-.38-.921l.074-.136c.305-.561-.309-1.175-.87-.87l-.136.075a.64.64 0 0 1-.92-.382ZM12.5 14a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3"/>
+          </svg>
+        </button>
+        
+    </div>
+    
+    <div class="betslip">
+        <button class="slip" id="checkBetSlip">SP</button>
+    </div>
+    {% endif %}
+
+<!-- Search Icon -->
+  <i class="bi bi-search search-icon" id="search-icon"></i>
+
+  <!-- Overlay -->
+  <div class="overlay" id="overlay"></div>
+
+  <!-- Search Popup -->
+  <div class="search-popup" id="search-popup">
+    <button class="btn-close close-popup" id="close-popup"></button>
+    <div class="input-group">
+      <input type="text" class="form-control" id="search-bar" placeholder="Search...">
+      <button class="btn btn-primary" id="search-button">Search</button>
+    </div>
+    <div id="search-results" class="mt-3"></div>
+  </div> 
+
+
+    <main>
+        <section id="upcoming-matches">
+             <!--matches-->
+             <br><br>
+
+            <!--start-->
+<div id="content-container">
+            <input type="hidden" value="{{ page_base }}" id="page_base">
+            {{ html_page|safe }}
+            <!--finish-->
+</div>
+        </section>
+        <section id="live-matches">
+            <h2>Live Matches</h2>
+            <!-- Display live matches here -->
+            <div class="match">
+                <h3>Live Match 1</h3>
+                <p>Team X vs. Team Y</p>
+                <p>Score: X - Y</p>
+                <h3>Comming soon</h3>
+                <button>Bet Now</button>
+            </div>
+            <!-- Add more live matches as needed -->
+        </section>
+        <section id="how-to-bet">
+            <h2>How to Bet</h2>
+            <p>make a deposit via the p2p page via various methods eg mpesa paybill and crypto then verify</p>
+            <p>select you picks then click on the count button to reveal selects, adjust your stakes for amounts above kes10 then place bet</p>
+</section>
+        
+    </main>
+    {% if mobile %}
+    <input type="hidden" id="usrdata" value="{{ mobile }}">
+    <input type="hidden" id="cdata" value="{{ balanc }}">
+    <script>
+        //persistInputValue('usrdata');
+        //syncValues('cdata', 'balanceAmount');
+    </script>
+    {% endif %}
+    
+    <footer>
+        <p>&copy; 2024 Football Betting. All rights reserved.</p>
+    </footer>
+</body>
+{% csrf_token %}
+<script>
+
+document.addEventListener('input',()=>{document.getElementById('possible').textContent=((document.getElementById('amount').value) * (document.getElementById('totalOdds').textContent)).toFixed(2)});
+document.addEventListener('mouseover',()=>{document.getElementById('possible').textContent=((document.getElementById('amount').value) * (document.getElementById('totalOdds').textContent)).toFixed(2)});
+document.addEventListener('click',()=>{document.getElementById('possible').textContent=((document.getElementById('amount').value) * (document.getElementById('totalOdds').textContent)).toFixed(2)});
+       
+</script>
+
+<style>
+    #amount{
+    position: relative;
+    top: 80px;
+    left:0%;
+    width: 20%;
+}
+
+.bet-slip-container {
+        height: fit-content;
+        overflow: clip;
+    }
+
+.minimize{
+        background-color: aquamarine;
+        transform: scaleY(1.7);
+        width: 7.5%;
+        border-radius: 60px;
+        position: absolute;
+        top: 5%;
+        left: 10px;
+    }
+
+    .popup {
+        display: none; /* Hide the popup by default */
+        position: fixed;
+        top: 0%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+        z-index: 9999; /* Ensure the popup is on top of other elements */
+        overflow: auto; /* Enable scrolling if needed */
+    }
+
+    .popup-content {
+        background-color: #fefefe;
+        margin: 10% auto; /* Center the popup vertically and horizontally */
+        padding: 20px;
+        border-radius: 5px;
+        max-width: 600px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+        text-align: center;
+        backdrop-filter: blur(10px);
+        overflow: auto;
+        position: relative;
+    }
+    
+    #possible{
+        position: relative;
+        bottom:7%;
+        left: 40%;
+        border: 0.5px solid royalblue;
+        border-radius: 15%;
+        margin: 25px;
+        width: 20%;
+        overflow-x: auto;
+    }
+    .popup-content h2{
+        background-color: greenyellow;
+
+    }
+   .popup-content span{
+    color: #000000;
+   }
+
+</style>
+<script>
+
+
+
+    function stk_push(){
+        var amount= document.getElementById('depo_amount').value
+        //pay={'deposit_amount':amount,'enc_text':`${get_enc_text()}`}
+        //send_json(pay,'/pay_mpesa/')
+         // Construct the new URL for redirection
+    const baseUrl = window.location.origin; // Get the base URL (e.g., http://192.168.0.108:8080)
+    const defp=document.getElementById('page_base').value
+     const newUrl = `${baseUrl}/pay_mpesa/${amount}/${get_enc_text()}`;
+    var enc_text=get_enc_text()
+    var def_page=`${defp}/home/${enc_text}`
+    // Redirect to the new URL
+    window.location.href = newUrl;
+    //window.location.href = `${baseUrl}`;
+    setTimeout(()=>{window.location.href = `${def_page}`;},2300);
+    }
+    //create popup with all data collected
+document.getElementById('deposit').addEventListener('click', ()=>{
+
+
+// Create the deposit popup HTML dynamically
+const depo_pop = `
+<div id="depo_popup" class="popup">
+    <div class="popup-content">
+        <br><br>
+        <h2>Deposit</h2>
+        <button id="closedepo" class="minimizedepo">X</button><br><br>
+        <input placeholder='$ Amount' id='depo_amount' type='textarea' maxlength='6'><br><br>
+        <center><button id="depo_sub" onclick="stk_push()">Deposit</button></center>
+        <button id="account_amount" class="deposit_ck">Balance: $<span id="balance">{{ balanc }}</span></button><br><br>
+        <span>#note: only mpesa is supported</span>
+        
+    </div>
+</div>
+<style>
+    #depo_popup{
+        position:absolute;
+        top:25%;
+    }
+    .minimizedepo{
+        transform: scale(1.35) scaleX(2);
+        border-radius: 50%;
+        background-color: red;
+        position: absolute;
+        top: 17%;
+        left:93%;
+    }
+    #depo_sub{
+        background-color: greenyellow;
+        border-radius: 2px;
+        transform: scale(1.7);
+    }
+    body{
+        background-color:black;
+    }
+    main{
+        display:none;
+    }
+    .deposit_ck{
+        position:absolute;
+        top:15%;
+        left:5%
+    }
+</style>
+`;
+// #uncomment code below to return simple mpesa popup
+
+ // Insert the popup HTML into the document body
+ //document.body.insertAdjacentHTML('beforeend', depo_pop);
+ 
+
+ // Show the popup
+ //const popup =document.getElementById('depo_popup')
+ //popup.style.display = 'block';
+ 
+
+ // Close the popup when the close button is clicked
+ //document.getElementById('closedepo').addEventListener('click', function() {
+   //var defx=document.getElementById('page_base').value
+    //window.location.href=`${defx}/home/${get_enc_text()}`
+    //popup.style.display = 'none';
+    //document.body.removeChild(depo_pop); // Remove the popup HTML from the DOM
+
+    window.location.href=`/home/${get_enc_text()}/pay/`
+ });
+
+});
+
+
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+    const toggleBtn = document.getElementById('toggle-btn');
+    
+    // Function to toggle between light and dark mode
+    function toggleBackgroundColor() {
+        if (document.body.classList.contains('light-mode')) {
+            document.body.classList.remove('light-mode');
+            document.body.classList.add('dark-mode');
+            localStorage.setItem('theme', 'dark');
+        } else {
+            document.body.classList.remove('dark-mode');
+            document.body.classList.add('light-mode');
+            localStorage.setItem('theme', 'light');
+        }
+    }
+    
+    // Check localStorage for theme preference on page load
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+        document.body.classList.add('dark-mode');
+    } else {
+        document.body.classList.add('light-mode');
+    }
+    
+    // Set up event listener for the button
+    toggleBtn.addEventListener('click', toggleBackgroundColor);
+});
+
+</script>
+
+{% if show_depo %}
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const containers = document.querySelectorAll('.button-container');
+        const storageKey = 'betSlip';
+        let betSlip = JSON.parse(localStorage.getItem(storageKey)) || {};
+    
+        containers.forEach(container => {
+            const span = container.querySelector('span');
+            const buttons = container.querySelectorAll('button');
+            const matchName = span.textContent.trim();
+    
+            // Set initial state from localStorage
+            if (betSlip[matchName]) {
+                buttons.forEach(button => {
+                    if (button.textContent.trim() === betSlip[matchName].odds) {
+                        button.classList.add('active');
+                    }
+                });
+            }
+    
+            // Add click event listener to each button
+            buttons.forEach(button => {
+                button.addEventListener('click', function () {
+                    const label = button.previousElementSibling?.textContent.trim() || ''; // Get the previous sibling label, if exists
+    
+                    // If clicked button is already active, deactivate it
+                    if (button.classList.contains('active')) {
+                        button.classList.remove('active');
+                        delete betSlip[matchName];
+                    } else {
+                        // Activate the clicked button and deactivate others
+                        buttons.forEach(btn => btn.classList.remove('active'));
+                        button.classList.add('active');
+                        betSlip[matchName] = {
+                            odds: button.textContent.trim(),
+                            label: label
+                        };
+                    }
+                    // Update localStorage
+                    localStorage.setItem(storageKey, JSON.stringify(betSlip));
+                });
+            });
+        });
+    
+        // Function to calculate total odds
+        function calculateTotalOdds(betSlipSummary) {
+            let totalOdds = 1;
+            for (const match in betSlipSummary) {
+                totalOdds *= parseFloat(betSlipSummary[match].odds);
+            }
+            return totalOdds;
+        }
+    
+        // Function to update the popup content
+        function updatePopupContent() {
+            const betSlipSummary = JSON.parse(localStorage.getItem(storageKey)) || {};
+    
+            // Calculate total odds
+            const totalOdds = calculateTotalOdds(betSlipSummary);
+    
+            // Update total odds display
+            const totalOddsElement = document.getElementById('totalOdds');
+            if (totalOddsElement) {
+                totalOddsElement.textContent = `${totalOdds.toFixed(2)}`;
+            }
+    
+            // Update bet slip container
+            const betSlipContainer = document.getElementById('betSlipContainer');
+            if (betSlipContainer) {
+                betSlipContainer.innerHTML = '';
+                for (const match in betSlipSummary) {
+                    const matchContainer = document.createElement('div');
+                    matchContainer.classList.add('match-container');
+    
+                    const matchName = document.createElement('span');
+                    matchName.textContent = match;
+                    matchContainer.appendChild(matchName);
+    
+                    const odds = document.createElement('span');
+                    odds.classList.add('odds_style');
+                    odds.textContent = `${betSlipSummary[match].odds}`;
+                    matchContainer.appendChild(odds);
+    
+    
+                    const label = document.createElement('span');
+                    label.classList.add('label_style');
+                    label.textContent = `(${betSlipSummary[match].label})`; // Display the label
+                    matchContainer.appendChild(label);
+    
+                    const removeButton = document.createElement('button');
+                    removeButton.textContent = '-';
+                    removeButton.classList.add('to_remove');
+                    removeButton.addEventListener('click', function () {
+                        delete betSlipSummary[match];
+                        localStorage.setItem(storageKey, JSON.stringify(betSlipSummary));
+                        updatePopupContent(); // Update the popup content after removing the selection
+                    });
+                    matchContainer.appendChild(removeButton);
+    
+                    betSlipContainer.appendChild(matchContainer);
+                }
+            }
+        }
+    
+        //picks popup handler here 
+        //create popup with all data collected
+        document.getElementById('checkBetSlip').addEventListener('click', () => {
+            const betSlipSummary = JSON.parse(localStorage.getItem(storageKey)) || {};
+        
+            // Create the popup HTML dynamically
+            const popupHtml = `
+            <div id="popup" class="popup">
+                <div class="popup-content">
+                    <br><br>
+                    <h2>Bet Slip</h2>
+                    <button id="closePopup" class="minimize">-</button>
+                    <div id="betSlipContainer" class="bet-slip-container"></div><br>
+                    <div id="totalOdds">0.00</div><br>
+                    <input placeholder='$ Amount' id='amount' type='textarea' maxlength='6'><br>
+                    <label id='ps_label'>win:</label><br>
+                    <span id="possible">0.00</span>
+                    <button id="clearBetSlip">Clear Bet Slip</button>
+                    <button id="place_bet" class="submit-btn" onclick="place_bet()">Place Bet</button>
+                    <button id="account_amount" class="deposit_check">Balance: $<span id="balance">{{ balanc }}</span></button>
+                </div>
+                <style>
+                body{
+                    background-color:black;
+                }
+                main{
+                    display:none;
+                }
+                
+                </style>
+            </div>
+            `;
+            
+            // Insert the popup HTML into the document body or specific container
+            document.body.insertAdjacentHTML('beforeend', popupHtml);
+    
+            // Show the popup
+            const popup = document.getElementById('popup')
+            popup.style.display = 'block';
+    
+            // Close the popup when the close button is clicked
+            document.getElementById('closePopup').addEventListener('click', function () {
+                //window.location.reload()
+                popup.style.display = 'none';
+                document.body.removeChild(popup); // Remove the popup HTML from the DOM
+    
+            });
+    
+            // Clear the entire bet slip when the clear button is clicked
+            document.getElementById('clearBetSlip').addEventListener('click', function () {
+                localStorage.removeItem(storageKey);
+                document.getElementById('checkBetSlip').click(); // Refresh the popup content
+                setTimeout(() => window.location.reload(), 2000);
+    
+            });
+            //update popup
+            updatePopupContent();
+        });
+    
+        //fast check selections
+        // Add event listener for mouseover event on the whole document
+        document.addEventListener('mouseover', function () {
+            // Execute the script when the mouseover event is triggered
+            update_sel_bt()
+    
+        });
+    
+        document.addEventListener('scroll', function () {
+            // Execute the script when the mouseover event is triggered
+            update_sel_bt()
+    
+        });
+    
+    //home btnn
+    const mainButton = document.getElementById('menu');
+        const circleMenu = document.getElementById('circleMenu');
+    
+        mainButton.addEventListener('click', function () {
+            circleMenu.classList.toggle('visible');
+        });
+    
+        // Hide the menu when the cancel button is clicked
+        const cancelButton = circleMenu.querySelector('.cancel-button');
+        cancelButton.addEventListener('click', function () {
+            circleMenu.classList.remove('visible');
+        });
+    
+    //
+    
+    
+        function count_green_Buttons() {
+            // Get all buttons in the document
+            var buttons = document.querySelectorAll('button');
+    
+            // Initialize counter for green buttons
+            var greenButtonCount = 0;
+    
+            // Loop through each button
+            buttons.forEach(function (button) {
+                // Get the background color of the button
+                var computedStyle = window.getComputedStyle(button);
+                var backgroundColor = computedStyle.backgroundColor;
+    
+                // Check if the background color is green
+                if (backgroundColor === 'rgb(0, 128, 0)') {
+                    greenButtonCount++;
+                }
+            });
+    
+            return greenButtonCount;
+        }
+    
+    
+        function update_sel_bt() {
+            var selections = count_green_Buttons()
+            var slip_button = document.getElementById('checkBetSlip');
+            slip_button.textContent = selections;
+        }
+    
+    
+        function clear_all() {
+            localStorage.clear();
+            location.reload()
+        }
+    
+        function unshow() {
+            const popup = document.getElementById('popup');
+            popup.style.display = 'none';
+        }
+    
+        // Display random picks in a popup
+        function display_pop_up(datax) {
+            var popup = document.getElementById('popup');
+            var picks = document.getElementById("picks_c");
+            picks.textContent = datax;
+            popup.style.display = 'block';
+        }
+    
+    })
+    
+</script>
+{% endif %}
+
+<style>
+    .hid_cont{
+        display:none;
+        }
+
+</style>
+<script>
+    function showPopup(message, backgroundColor) {
+        // Check if the popup already exists
+        let popup = document.getElementById('custom-popup');
+        
+        // If the popup doesn't exist, create it
+        if (!popup) {
+            // Create the popup div
+            popup = document.createElement('div');
+            popup.id = 'custom-popup';
+            popup.style.position = 'fixed';
+            popup.style.top = '50%';
+            popup.style.left = '50%';
+            popup.style.transform = 'translate(-50%, -50%)';
+            popup.style.padding = '20px';
+            popup.style.fontFamily = 'Arial, sans-serif';
+            popup.style.fontSize = '16px';
+            popup.style.borderRadius = '10px';
+            popup.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.2)';
+            popup.style.zIndex = '1000';
+            popup.style.opacity = '0';
+            popup.style.transition = 'opacity 0.5s ease-in-out';
+            popup.style.display = 'none'; // Start hidden
+    
+            // Append the popup to the body
+            document.body.appendChild(popup);
+        }
+    
+        // Set the content and background color dynamically
+        popup.textContent = message;
+        popup.style.backgroundColor = backgroundColor;
+    
+        // Show the popup
+        popup.style.display = 'block';
+        
+        // Fade in the popup
+        setTimeout(() => {
+            popup.style.opacity = '1';
+        }, 100); // small delay for the fade-in effect
+    
+        // Hide the popup after 2.5 seconds
+        setTimeout(() => {
+            popup.style.opacity = '0';
+    
+            // After the fade-out transition ends, hide the popup
+            setTimeout(() => {
+                popup.style.display = 'none';
+            }, 500); // Match the transition duration for hiding
+        }, 2500); // Delay for showing the popup (2.5 seconds)
+    }
+    
+</script>
+
+</html>

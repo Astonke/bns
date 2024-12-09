@@ -1,0 +1,544 @@
+11:30
+1262
+Real Kashmir - Inter Kashi FC
+2.31
+3.30
+2.80
+13:00
+9366
+FC Olimpik - PFK Metallurg Bekabad
+2.70
+3.10
+2.50
+13:15
+9432
+PFC Minyor Pernik - SFC Etar Veliko Tarnovo
+3.80
+3.15
+1.95
+14:00
+1660
+Muglaspor - Silivrispor
+2.22
+3.30
+3.00
+14:00
+6458
+Sreenidi Deccan FC - Delhi FC
+1.39
+4.80
+6.20
+14:00
+8139
+Isparta 32 Sporu - Batman Petrolspor
+3.70
+3.25
+1.95
+15:00
+3165
+PSS Sleman - Persib Bandung
+3.55
+3.45
+1.93
+15:00
+2673
+PFC Ludogorets Razgrad II - FK CSKA 1948 II
+1.82
+3.45
+4.00
+15:00
+5283
+Makedonikos FC - PAOK Thessaloniki B
+1.69
+3.65
+4.50
+15:00
+6155
+Om Al Qutain - AL Arabi
+3.90
+3.35
+1.87
+15:00
+1265
+CSKA Sofia II - PFC Dobrudzha Dobrich
+3.05
+3.10
+2.27
+15:00
+4454
+PFC Belasitsa Petrich - Pfk Botev Plovdiv II
+1.18
+5.80
+14.00
+15:10
+7125
+AL Zulfi - Al-Ain FC (SA)
+1.82
+3.35
+4.10
+15:20
+3738
+Al-Jabalain - Al-Najma
+2.80
+3.15
+2.40
+15:30
+9868
+El Qanah FC - El Sekka El Hadid
+1.78
+2.95
+5.40
+15:30
+8038
+Telecom Egypt - Tanta FC
+1.92
+2.85
+4.50
+15:30
+3322
+Myanmar - Indonesia
+5.80
+4.30
+1.47
+15:30
+5265
+Negeri Sembilan - Selangor FC
+12.00
+6.40
+1.17
+15:30
+2454
+Sporting Alexandria - La Viena FC
+2.65
+2.75
+2.85
+15:30
+8514
+KS Pogradeci - KS Burreli
+1.41
+3.60
+9.80
+15:30
+9970
+El Dakhleya Sc - Abo Qair Semads
+2.75
+2.36
+3.30
+15:30
+9694
+Panionios Athens - Panargiakos FC
+1.32
+4.30
+9.60
+15:45
+1395
+FK Hebar Pazardzhik - FC Arda Kardzhali
+6.00
+3.70
+1.58
+16:00
+6341
+OFK Belgrade - FK Novi Pazar
+2.01
+3.30
+3.45
+16:00
+2564
+Laos - Vietnam
+18.00
+7.80
+1.10
+16:00
+7076
+Bahir Dar Kenema FC - Saint George SC
+2.11
+3.05
+3.45
+17:00
+2164
+Gol Gohar Sirjan FC - Tractor Sport Club
+4.60
+3.00
+1.92
+18:00
+4610
+Yemen - Kuwait
+7.60
+4.40
+1.41
+18:00
+9215
+FK Javor Ivanjica - FK Mladost Gat
+2.13
+2.85
+3.75
+18:00
+3452
+FK Spartak 1918 Varna - PFC Slavia Sofia
+2.15
+3.30
+3.30
+18:00
+2456
+Al Mokawloon Al Arab - El Mansurah
+1.30
+4.60
+9.60
+18:00
+5329
+FK IMT Novi Beograd - FK Napredak Krusevac
+1.99
+3.15
+3.70
+18:00
+4168
+Turan Tovuz - Shamakhi FK
+1.37
+4.30
+7.60
+18:20
+2433
+Jeddah Club - Al-Faisaly FC
+2.95
+3.00
+2.41
+18:30
+2326
+AFC Hermannstadt - ASC Otelul Galati
+2.70
+2.80
+2.90
+18:30
+6230
+Athens Kallithea FC - APO Levadiakos FC
+2.36
+3.00
+3.20
+18:30
+2769
+ACF Fiorentina - SS Lazio
+1.92
+3.60
+3.40
+19:00
+1307
+Al-Khaldiya SC - Al-Shabbab
+1.29
+5.00
+8.80
+19:00
+9252
+Hadiya Hossana FC - Sidama Bunna SC
+2.60
+2.90
+2.80
+19:00
+9653
+KF Tirana - KF Teuta
+2.12
+3.10
+3.40
+19:00
+9372
+Al Hussein Irbid - Shabab AL Ordun
+1.23
+5.40
+11.00
+19:00
+1303
+FC Polissya Zhytomyr - FC Rukh Lviv
+2.03
+3.15
+3.85
+19:00
+8268
+Al Riffa - Al-Ahli SC Manama
+1.53
+3.80
+5.60
+20:00
+7512
+Esenler Erokspor - Umraniyespor
+2.23
+3.60
+2.75
+20:00
+7648
+FK Radnicki Nis - FK Radnicki 1923 Kragujevac
+2.38
+3.35
+2.70
+20:00
+2927
+2.21
+3.55
+2.80
+20:00
+1178
+Gaziantep FK - Caykur Rizespor
+2.60
+3.40
+2.55
+20:00
+3399
+Eintracht Frankfurt - RB Leipzig
+1.14
+7.20
+13.00
+20:00
+3177
+Amed Sportif Faaliyetler - Sanliurfaspor
+1.95
+3.30
+3.65
+20:00
+9313
+Hapoel Rishon Lezion FC - Hapoel Kfar Shalem FC
+2.85
+3.50
+2.21
+20:00
+8443
+FK Zeljeznicar Sarajevo - NK Gosk Gabela
+1.15
+6.60
+14.00
+20:00
+3077
+Hapoel Ramat Gan Givatayim FC - Maccabi Herzliya
+1.78
+3.85
+3.75
+20:45
+6387
+Hapoel Hadera FC - Maccabi Bney Reine
+2.95
+3.20
+2.40
+21:00
+9703
+LKS Lodz - MKS Arka Gdynia
+3.15
+3.50
+2.05
+21:00
+4041
+Inova Sca - Club Omnisports de Korhogo
+1.64
+3.20
+6.00
+21:00
+8162
+Ironi Tiberias - Maccabi Netanya FC
+3.85
+3.60
+1.89
+21:00
+5076
+Korona Kielce - Pogon Szczecin
+3.20
+3.35
+2.19
+21:30
+3598
+2.17
+3.45
+3.10
+21:30
+3744
+FC Universitatea Cluj - FC CFR 1907 Cluj
+2.95
+3.00
+2.50
+22:00
+8469
+FC Utrecht - FC Eindhoven
+3.00
+3.65
+2.16
+22:00
+5552
+PSV Eindhoven - Roda JC Kerkrade
+4.00
+3.95
+1.77
+22:00
+8663
+Ajax Amsterdam - De Graafschap
+3.65
+4.00
+1.83
+22:30
+8639
+Perugia Calcio Spa - Campobasso FC
+2.37
+3.10
+3.10
+22:30
+9220
+Giugliano Calcio 1928 - SS Monopoli
+2.80
+3.15
+2.55
+22:30
+9691
+Lucchese Libertas 1905 - SS Arezzo
+3.30
+3.10
+2.23
+22:30
+6960
+FC Cartagena - Sporting Gijon
+4.90
+3.50
+1.72
+22:45
+2532
+FC Metz - USL Dunkerque
+1.85
+3.95
+4.20
+22:45
+9604
+AC Monza - Udinese Calcio
+2.60
+3.05
+3.05
+22:45
+9192
+Barwell FC - Kettering Town
+2.80
+3.80
+2.14
+23:00
+6881
+West Ham United - Wolverhampton Wanderers
+1.86
+4.10
+3.90
+23:00
+6669
+Northampton Town - Peterborough United
+3.25
+3.65
+2.04
+23:00
+9014
+Getafe CF - Espanyol Barcelona
+1.80
+3.30
+5.80
+23:00
+6382
+CA Tigre - Independiente Rivadavia
+2.10
+3.10
+3.70
+23:15
+8637
+Estrela Amadora - FC Arouca
+2.70
+3.20
+2.60
+Time
+ID
+Home - Away
+1
+X
+2
+01:00
+5752
+Humble Lions FC - Mount Pleasant FC
+11.00
+5.60
+1.22
+01:15
+8427
+Argentinos Juniors - CA San Lorenzo de Almagro
+2.04
+3.00
+4.10
+01:15
+2725
+CA Belgrano de Cordoba - Estudiantes de La Plata
+2.85
+3.15
+2.50
+03:30
+1079
+CA Huracan - CA Platense
+2.05
+2.65
+4.80
+03:30
+8616
+CA Independiente Avellaneda - Atletico Tucuman
+1.95
+3.05
+4.30
+03:45
+2858
+Arnett Gardens FC - Harbour View FC
+1.37
+4.40
+7.80
+04:00
+4033
+Guadalupe FC - Inter San Carlos
+2.85
+3.35
+2.28
+11:30
+7497
+Madura United - Semen Padang FC
+1.79
+3.50
+4.00
+14:00
+9673
+SC Farense - Santa Clara
+1.94
+3.55
+3.40
+15:00
+2667
+Al-Batin - Ohod Medina
+2.01
+3.35
+3.40
+15:40
+1919
+Neom SC - Al-Arabi SC (SA)
+1.57
+4.10
+4.80
+17:30
+1628
+Al-Adalah - Al-Tai
+2.80
+3.15
+2.41
+18:00
+5576
+AFK Csikszereda Miercurea Ciuc - Metaloglobus Bucuresti
+1.88
+3.25
+4.00
+20:45
+6943
+GNK Dinamo Zagreb - Celtic Glasgow
+3.05
+3.50
+2.19
+20:45
+4537
+Girona FC - Liverpool FC
+6.80
+5.00
+1.46
+22:00
+5819
+Rotherham United - Tranmere Rovers FC
+1.74
+3.80
+4.30

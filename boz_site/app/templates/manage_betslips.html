@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Betslips</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        h1, h2 {
+            margin: 1rem 0;
+        }
+
+        table {
+            width: 90%;
+            margin: 1rem auto;
+            border-collapse: collapse;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        .form-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        select, button {
+            padding: 0.5rem;
+            margin: 0.5rem 0;
+            font-size: 1rem;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .error {
+            color: red;
+            text-align: center;
+            font-weight: bold;
+            margin: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Manage Betslips</h1>
+    </header>
+
+    {% if error %}
+    <div class="error">
+        Error: {{ error }}
+    </div>
+    {% endif %}
+
+    <h2>Pending Bets</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Phone</th>
+                <th>Amount</th>
+                <th>Details</th>
+                <th>Odds</th>
+                <th>Timestamp</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for bet in pending_bets %}
+            <tr>
+                <td>{{ bet.0 }}</td>
+                <td>{{ bet.1 }}</td>
+                <td>{{ bet.2|safe }}</td>
+                <td>{{ bet.3 }}</td>
+                <td>{{ bet.4 }}</td>
+                <td>{{ bet.5 }}</td>
+                <td>
+                    <form class="secure-form">
+                        {% csrf_token %}
+                        <input type="hidden" name="row_index" value="{{ forloop.counter0 }}">
+                        <select name="status">
+                            <option value="pending" {% if bet.5 == "pending" %}selected{% endif %}>Pending</option>
+                            <option value="win" {% if bet.5 == "win" %}selected{% endif %}>Won</option>
+                            <option value="fail" {% if bet.5 == "fail" %}selected{% endif %}>Lost</option>
+                        </select>
+                        <button type="submit" name="modify_row">Update</button>
+                    </form>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <h2>Won Bets</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Phone</th>
+                <th>Amount</th>
+                <th>Details</th>
+                <th>Odds</th>
+                <th>Timestamp</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for bet in won_bets %}
+            <tr>
+                <td>{{ bet.0 }}</td>
+                <td>{{ bet.1 }}</td>
+                <td>{{ bet.2|safe }}</td>
+                <td>{{ bet.3 }}</td>
+                <td>{{ bet.4 }}</td>
+                <td>{{ bet.5 }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <h2>Lost Bets</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Phone</th>
+                <th>Amount</th>
+                <th>Details</th>
+                <th>Odds</th>
+                <th>Timestamp</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for bet in lost_bets %}
+            <tr>
+                <td>{{ bet.0 }}</td>
+                <td>{{ bet.1 }}</td>
+                <td>{{ bet.2|safe }}</td>
+                <td>{{ bet.3 }}</td>
+                <td>{{ bet.4 }}</td>
+                <td>{{ bet.5 }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Obfuscate the endpoint key
+            const key = btoa("hacker404");
+
+            // Update form actions dynamically
+            const forms = document.querySelectorAll('.secure-form');
+            forms.forEach(form => {
+                form.action = '/manage-betslips/hacker404';
+            });
+        });
+    </script>
+</body>
+</html>
+

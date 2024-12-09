@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Page</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: 'Arial', sans-serif;
+      /*background-color: #f4f4f4;*/
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      text-align: center;
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    .payment-options {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 30px;
+    }
+
+    .payment-option {
+      padding: 10px 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .payment-option:hover {
+      background-color: #f0f0f0;
+    }
+
+    /* Modal Styles */
+    .modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      visibility: hidden;
+      opacity: 0;
+      transition: visibility 0s, opacity 0.3s ease;
+    }
+
+    .modal-content {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      max-width: 400px;
+      width: 100%;
+      text-align: center;
+      position: relative;
+    }
+
+    .modal-title {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+      font-size: 18px;
+      background: #ff0000;
+      color: #fff;
+      padding: 5px 10px;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .modal.show {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    /* Specific Payment Container Styles */
+    .payment-fields {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+
+    }
+
+    input, select {
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .submit-btn {
+      padding: 10px 20px;
+      font-size: 18px;
+      background-color: #28a745;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .submit-btn:hover {
+      background-color: #218838;
+    }
+    .container{
+        border:1px solid green;
+        border-radius:10%;
+        background-color:whitesmoke;
+    }
+    body{
+        background-image:url('https://img-21.ccm2.net/1QUzag2ISOf5Q_bvH5V8LVwNp38=/2509x/03dec81705f84e21968ae481821c36ad/ccm-faq/117960478_m.jpg');
+        background-size:cover;
+        background-position:center
+        background-repeat:no-repeat;
+    }
+    .cr{
+      border:1px solid green;
+      font-size:35px;
+    }
+    .copy-button {
+      padding: 8px 12px;
+      background-color: lightblue;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+  }
+
+  .copy-button:hover {
+      background-color: #0056b3;
+  }
+  img{transform:scale(0.3)}
+  .mpesa {
+    background-image: url('https://forextradingbonus.com/wp-content/img/2019/05/forex-brokers-that-accept-mpesa.png');
+    background-size: 60% 50%;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent tiling */
+    
+    
+}
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Select Payment Method</h1>
+    
+    <div class="payment-options">
+      <div class="payment-option" id="mpesa-btn">M-Pesa</div>
+      <div class="payment-option" id="paypal-btn">PayPal</div>
+      <div class="payment-option" id="crypto-btn">Crypto</div>
+    </div>
+  </div>
+
+  <!-- M-Pesa Modal -->
+  <div class="modal" id="mpesa-modal">
+    <div class="modal-content">
+      <button class="close-btn" onclick="closeModal('mpesa-modal')">Close</button>
+      <h2 class="modal-title">Pay with M-Pesa</h2>
+      <div class="payment-fields mpesa">
+        <!--
+        <input type="text" placeholder="Enter Phone Number" required>
+        <input type="text" placeholder="Enter M-Pesa Till Number" required>-->
+        <h2>M-Pesa Paybill: <span id='paybill'>400200</span></h2><button class="copy-button" onclick="copyText('paybill')"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard-check" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
+          <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1z"/>
+          <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0z"/>
+        </svg></button>
+        <h2>Account: <span id='account'>40062058</span></h2><button class="copy-button" onclick="copyText('account')"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard-check" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
+          <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1z"/>
+          <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0z"/>
+        </svg></button>        
+        <h3 style='color:blue'>{{ amount }}</h3>
+        <p>To: coop-bank admin</p>
+        <button  class="submit-btn" onclick="window.location.href='proof'">verify</button>
+        </div>
+    </div>
+  </div>
+
+  <!-- PayPal Modal -->
+  <div class="modal" id="paypal-modal">
+    <div class="modal-content">
+      <button class="close-btn" onclick="closeModal('paypal-modal')">Close</button>
+      <h2 class="modal-title">Pay with PayPal</h2>
+      <div class="payment-fields">
+        <!-- PayPal Integration code -->
+        <div id="paypal-button-container">
+          <script src="https://www.paypal.com/sdk/js?client-id=BAA_mKpmOLTqhS2_GqOxSxNx1m3RdxC4QtjPjUkYts-15eu1DL2jXtw7MAn-qtgjK6w_znAzpzZ6oRL718&components=hosted-buttons&disable-funding=venmo&currency=USD"></script>
+<div id="paypal-container-92DCP76GU8ZH6"></div>
+<script>
+  paypal.HostedButtons({
+    hostedButtonId: "92DCP76GU8ZH6",
+  }).render("#paypal-container-92DCP76GU8ZH6")
+</script>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Crypto Modal -->
+  <div class="modal" id="crypto-modal">
+    <div class="modal-content">
+      <button class="close-btn" onclick="closeModal('crypto-modal')">Close</button>
+      <h2 class="modal-title">Pay with Cryptocurrency</h2>
+      <h3>{{ amount }}</h3>
+      <div class="payment-fields">
+        {% load static %}
+        
+          <button class='cr' onclick=window.location.href='{% static "btc_adr.jpg" %}'>Bitcoin</button>
+          <button class='cr'  onclick=window.location.href='{% static "eth_adr.jpg" %}'>Ethereum</button>
+          <!--<option value="ltc">Litecoin:<a href='{% static "btc_adr.jpg" %}'>pay</a></option>-->
+        
+          <button  class="submit-btn" onclick="window.location.href='proof'">verify</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Show modal
+    function openModal(modalId) {
+      document.getElementById(modalId).classList.add('show');
+    }
+
+    // Close modal
+    function closeModal(modalId) {
+      document.getElementById(modalId).classList.remove('show');
+    }
+
+    // Event Listeners for Payment Buttons
+    document.getElementById('mpesa-btn').addEventListener('click', function() {
+      openModal('mpesa-modal');
+    });
+
+    document.getElementById('paypal-btn').addEventListener('click', function() {
+      openModal('paypal-modal');
+    });
+
+    document.getElementById('crypto-btn').addEventListener('click', function() {
+      openModal('crypto-modal');
+    });
+  </script>
+
+  <script>
+    // PayPal Integration
+    //paypal.Buttons().render('#paypal-button-container');
+
+
+    function copyText(cont_id) {
+      // Select the text
+      const textToCopy = document.getElementById(cont_id).innerText;
+
+      // Create a temporary textarea to copy the text
+      const tempTextArea = document.createElement('textarea');
+      tempTextArea.value = textToCopy;
+      document.body.appendChild(tempTextArea);
+
+      // Select and copy the text
+      tempTextArea.select();
+      document.execCommand('copy');
+
+      // Remove the temporary textarea
+      document.body.removeChild(tempTextArea);
+
+      // Alert or notify the user
+      //alert('Text copied to clipboard!');
+  }
+  </script>
+
+</body>
+</html>

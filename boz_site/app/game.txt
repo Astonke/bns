@@ -1,0 +1,610 @@
+Argentina / Superliga
+01:15
+8753
+CA Platense - CD Godoy Cruz
+1.82
+3.00
+5.20
+01:15
+9191
+Defensa y Justicia - Deportivo Riestra
+1.72
+3.65
+4.60
+Internationals / Concacaf Nations League
+02:00
+6998
+Curacao - Saint Lucia
+1.23
+6.20
+8.40
+Colombia / Primera B
+02:00
+1134
+Deportes Quindio - Orsomarso SC
+2.43
+2.85
+3.05
+Brazil / Brasileiro Serie B
+03:00
+6589
+Botafogo FC SP - Avai FC SC
+2.50
+2.80
+3.15
+Internationals / Concacaf Nations League
+03:00
+1413
+Haiti - Puerto Rico
+1.23
+6.40
+8.60
+Argentina / Superliga
+03:30
+1073
+Atletico Tucuman - CA Huracan
+2.22
+3.00
+3.45
+Jamaica / Premier League
+03:30
+3814
+Chapelton Maroons FC - Mount Pleasant FC
+6.80
+4.20
+1.41
+Argentina / Superliga
+03:30
+1135
+Instituto AC Cordoba - Argentinos Juniors
+2.25
+2.95
+3.50
+Uruguay / Primera Division
+03:30
+1451
+Cerro Largo FC - Montevideo Wanderers
+2.11
+3.05
+3.70
+Brazil / Brasileiro Serie B
+03:45
+8589
+Ceara SC CE - America FC MG
+1.47
+4.40
+6.20
+Colombia / Primera B
+04:00
+1761
+Real Cartagena FC - Llaneros FC
+1.97
+3.30
+3.60
+Internationals / Concacaf Nations League
+04:00
+7373
+USA - Jamaica
+1.48
+4.20
+6.40
+Mexico / Liga MX, Women, Apertura
+05:00
+5916
+CF Monterrey - CF Pachuca
+1.75
+3.85
+3.85
+Internationals / Concacaf Nations League
+05:00
+4179
+Panama - Costa Rica
+1.89
+3.35
+4.10
+Vietnam / V-League 2
+11:00
+4563
+PVF-Cong An Nhan Dan FC - Phu Dong Ninh Binh
+2.17
+3.00
+3.35
+12:00
+5754
+BA Ria Vung Tau FC - Thanh Pho Ho Chi Minh II
+1.86
+3.15
+4.20
+Vietnam / V-League
+13:00
+7050
+Quang Nam FC - Hanoi FC
+4.10
+3.55
+1.77
+Vietnam / V-League 2
+13:00
+3057
+Hoa Binh FC - K. Khanh Hoa
+2.00
+3.10
+3.80
+Internationals / U19 Friendly Games
+13:00
+4281
+Poland - Romania
+2.50
+3.40
+2.50
+Internationals / U19 European Ch.ship, QF
+14:00
+5125
+Iceland - Ireland
+2.90
+3.45
+2.20
+Vietnam / V-League
+14:00
+8179
+Song Lam Nghe An - The Cong - Viettel FC
+3.05
+3.00
+2.34
+Internationals / U19 European Ch.ship, QF
+14:00
+1250
+Faroe Islands - Kosovo
+18.00
+7.60
+1.11
+14:00
+1256
+Moldova - Azerbaijan
+2.07
+3.40
+3.20
+14:00
+9315
+Austria - Spain
+3.95
+3.95
+1.71
+Internationals / Int. Friendly Games
+15:00
+5745
+Hong Kong - Mauritius
+1.84
+3.50
+4.20
+Internationals / U19 European Ch.ship, QF
+15:00
+7079
+Belarus - Armenia
+1.28
+5.20
+8.60
+15:00
+7533
+Lithuania - Bulgaria
+4.40
+4.90
+1.52
+15:00
+4193
+Belgium - England
+2.95
+3.50
+2.13
+15:00
+9503
+Croatia - Serbia
+2.29
+3.40
+2.80
+Internationals / WC Qualification, AFC
+15:00
+8762
+Korea DPR - Uzbekistan
+5.40
+3.60
+1.60
+Internationals / U21 Friendly Games
+15:00
+3101
+Bosnia & Herzegovina - Bulgaria
+2.26
+3.20
+3.00
+Vietnam / V-League
+15:15
+1819
+Haiphong FC - Hoang Anh Gia Lai
+1.73
+3.45
+4.50
+Internationals / U19 European Ch.ship, QF
+15:30
+2349
+Greece - Italy
+4.20
+3.70
+1.72
+15:30
+8801
+Montenegro - Bosnia & Herzegovina
+1.50
+4.20
+5.40
+Internationals / Africa Cup of Nations, Qualification
+16:00
+3090
+Tanzania - Guinea
+3.05
+2.80
+2.60
+Internationals / U20 Friendly Games
+16:00
+9037
+Italy - Romania
+1.39
+4.60
+6.60
+Internationals / Africa Cup of Nations, Qualification
+16:00
+2066
+Kenya - Namibia
+2.30
+2.90
+3.40
+16:00
+4572
+Cameroon - Zimbabwe
+1.50
+3.90
+6.80
+Internationals / Int. Friendly Games
+16:00
+5101
+Tajikistan - Afghanistan
+1.30
+4.80
+11.00
+Internationals / U19 European Ch.ship, QF
+17:00
+4279
+Denmark - Israel
+1.76
+3.70
+4.00
+Internationals / U19 Friendly Games
+17:00
+4857
+Czechia - Portugal
+5.20
+4.10
+1.53
+Internationals / WC Qualification, AFC
+17:00
+8008
+Palestine - Korea Republic
+10.00
+5.20
+1.25
+Internationals / U21 Friendly Games
+17:00
+9730
+Greece - Hungary
+2.10
+3.30
+3.20
+Internationals / WC Qualification, AFC
+17:00
+3935
+Kyrgyz Republic - IR Iran
+12.00
+6.00
+1.19
+Internationals / U19 European Ch.ship, QF
+17:00
+4893
+Albania - Northern Ireland
+2.15
+3.35
+3.05
+Algeria / Ligue 2
+17:00
+4433
+RC Kouba - ASM Oran
+1.57
+3.45
+6.20
+Internationals / U23 Friendly Games
+17:00
+6587
+Qatar - Kuwait
+1.66
+3.80
+4.50
+Internationals / Africa Cup of Nations, Qualification
+18:00
+5664
+Mauritania - Cape Verde
+1.91
+3.15
+4.40
+18:00
+2969
+Egypt - Botswana
+1.29
+4.90
+11.00
+Internationals / U20 Friendly Games
+18:00
+9108
+Poland - England
+5.20
+4.10
+1.53
+Internationals / Africa Cup of Nations, Qualification
+19:00
+7519
+Guinea-Bissau - Mozambique
+1.99
+3.25
+3.85
+Internationals / WC Qualification, AFC
+19:00
+9114
+United Arab Emirates - Qatar
+2.55
+3.25
+2.60
+Internationals / Africa Cup of Nations, Qualification
+19:00
+2998
+Congo Republic - Uganda
+3.00
+2.95
+2.55
+19:00
+6323
+DR Congo - Ethiopia
+1.28
+4.90
+12.00
+Internationals / U20 Friendly Games
+19:00
+5220
+Turkiye - Germany
+4.40
+3.80
+1.67
+Internationals / Africa Cup of Nations, Qualification
+19:00
+4153
+Ivory Coast - Chad
+1.10
+8.80
+22.00
+19:00
+2556
+Mali - Eswatini
+1.28
+4.90
+12.00
+19:00
+6895
+South Africa - South Sudan
+1.25
+5.20
+13.00
+19:00
+1151
+Sierra Leone - Zambia
+3.15
+3.20
+2.25
+Internationals / WC Qualification, AFC
+19:00
+7863
+Oman - Iraq
+3.20
+3.00
+2.27
+Internationals / U21 Euro Qualification
+19:30
+4941
+Czechia - Belgium
+2.60
+3.45
+2.50
+Internationals / Int. Friendly Games
+19:30
+5063
+Russia - Syria
+1.01
+17.00
+45.00
+Internationals / U21 Friendly Games
+20:00
+9532
+Turkiye - Serbia
+1.81
+3.40
+4.10
+Internationals / U19 European Ch.ship, QF
+20:00
+3977
+Estonia - Georgia
+5.00
+4.00
+1.56
+20:00
+1732
+Sweden - Norway
+5.00
+4.00
+1.56
+Internationals / Int. Friendly Games
+20:00
+4247
+Gibraltar - Moldova
+5.40
+3.70
+1.64
+Internationals / U21 Friendly Games
+20:15
+5475
+France - Germany
+2.15
+3.40
+3.05
+20:15
+6690
+Italy - Ukraine
+1.61
+3.65
+5.00
+Internationals / U21 Euro Qualification
+20:30
+1496
+Norway - Finland
+1.56
+4.50
+4.90
+21:00
+3832
+Croatia - Georgia
+1.62
+3.90
+5.20
+Internationals / U21 Friendly Games
+21:00
+9390
+Spain - Denmark
+1.30
+5.20
+7.60
+Internationals / U19 European Ch.ship, QF
+21:00
+4290
+Netherlands - Ukraine
+1.24
+5.40
+10.00
+21:00
+6657
+Kazakhstan - Slovenia
+12.00
+6.00
+1.19
+Internationals / WC Qualification, AFC
+21:15
+2320
+Kuwait - Jordan
+5.20
+3.55
+1.62
+Internationals / Africa Cup of Nations, Qualification
+22:00
+6753
+Senegal - Burundi
+1.18
+6.60
+15.00
+Spain / Copa del Rey
+22:00
+9213
+Pontevedra CF - Levante UD
+4.90
+3.25
+1.89
+Internationals / U19 European Ch.ship, QF
+22:30
+1171
+Liechtenstein - Wales
+35.00
+15.00
+1.01
+Uruguay / Primera Division
+22:30
+4207
+Rampla Juniors - CA River Plate (URU)
+2.24
+3.20
+3.25
+England Amateur / Football League Trophy
+22:30
+2830
+Bradford City - Rotherham United
+2.65
+3.40
+2.40
+Internationals / U19 European Ch.ship, QF
+22:30
+2010
+Scotland - France
+5.00
+4.00
+1.56
+Internationals / UEFA Nations League
+22:45
+3250
+Montenegro - Turkiye
+6.00
+4.60
+1.53
+England / National League South
+22:45
+1469
+Bath City FC - Maidstone United FC
+3.35
+3.15
+2.10
+Internationals / UEFA Nations League
+22:45
+6971
+Wales - Iceland
+1.69
+3.65
+5.80
+England Amateur / National League North
+22:45
+2056
+Leamington FC - Chester FC
+2.80
+3.40
+2.28
+22:45
+2146
+Hereford FC - Scarborough Athletic
+2.11
+3.20
+3.25
+Internationals / UEFA Nations League
+22:45
+5397
+Albania - Ukraine
+3.10
+3.30
+2.40
+England / Isthmian League, Pr. Div
+22:45
+9820
+Wingate & Finchley - Chatham Town
+2.04
+3.65
+3.05
+England / Northern League, Pr. Div
+22:45
+1616
+Gainsborough Trinity - Warrington Rylands 1906 FC
+2.10
+3.50
+3.05
+22:45
+7703
+Mickleover FC - Macclesfield FC
+6.40
+4.50
+1.40

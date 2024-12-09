@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Scores</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #333;
+            overflow: hidden; /* Prevent scrolling issues */
+        }
+        #games-container {
+            width: 80%;
+            max-width: 1200px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            overflow-y: auto; /* Ensure scrolling if content overflows */
+            margin: 20px auto; /* Center horizontally with margin auto */
+            max-height: 90vh; /* Limit height to prevent overflow */
+        }
+        .game-container {
+            border-bottom: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 10px;
+            background-color: #fafafa;
+            border-radius: 5px;
+            /* Remove any unwanted fixed height */
+        }
+        .game-container:last-child {
+            border-bottom: none;
+        }
+        .game-name {
+            font-size: 18px;
+            font-weight: bold;
+            color: #007bff;
+            margin-bottom: 5px;
+        }
+        .game-score {
+            font-size: 16px;
+            color: #555;
+        }
+        .game-score span {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="games-container">
+        {% for game in games %}
+        <div class="game-container">
+            <!-- Hidden input to store the ID -->
+            <input type="hidden" value="{{ game.id }}">
+            
+            <!-- Game name -->
+            <div class="game-name">{{ game.name }}</div>
+            
+            <!-- Scores -->
+            <div class="game-score">
+                <span>Home Score:</span> {{ game.home_score }} | <span>Away Score:</span> {{ game.away_score }}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>

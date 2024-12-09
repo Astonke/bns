@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Games</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .container {
+            margin-top: 30px;
+            max-width: 800px;
+        }
+        .card {
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .btn-custom {
+            background-color: #007bff;
+            color: white;
+        }
+        .btn-custom:hover {
+            background-color: #0056b3;
+        }
+        .message-box {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-header text-center bg-primary text-white">
+                <h2>Game Management</h2>
+            </div>
+            <div class="card-body">
+                <form method="post" id="gameForm">
+                    {% csrf_token %}
+                    <div class="mb-3">
+                        <label for="Game_id" class="form-label">Game ID</label>
+                        <input type="text" id="Game_id" name="Game_id" class="form-control" placeholder="Enter Game ID" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="match" class="form-label">Match</label>
+                        <input type="text" id="match" name="match" class="form-control" placeholder="Team A - Team B">
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 mb-3">
+                            <label for="home_odd" class="form-label">Home Odd</label>
+                            <input type="number" step="0.01" id="home_odd" name="home_odd" class="form-control">
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="draw_odd" class="form-label">Draw Odd</label>
+                            <input type="number" step="0.01" id="draw_odd" name="draw_odd" class="form-control">
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="away_odd" class="form-label">Away Odd</label>
+                            <input type="number" step="0.01" id="away_odd" name="away_odd" class="form-control">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="gg" class="form-label">GG</label>
+                            <input type="number" step="0.01" id="gg" name="gg" class="form-control">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="ngg" class="form-label">NGG</label>
+                            <input type="number" step="0.01" id="ngg" name="ngg" class="form-control">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="o1_5" class="form-label">O1.5</label>
+                            <input type="number" step="0.01" id="o1_5" name="o1_5" class="form-control">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="u1_5" class="form-label">U1.5</label>
+                            <input type="number" step="0.01" id="u1_5" name="u1_5" class="form-control">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="o2_5" class="form-label">O2.5</label>
+                            <input type="number" step="0.01" id="o2_5" name="o2_5" class="form-control">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="u2_5" class="form-label">U2.5</label>
+                            <input type="number" step="0.01" id="u2_5" name="u2_5" class="form-control">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="date" class="form-label">Match Time</label>
+                        <input type="time" id="date" name="date" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="action" class="form-label">Action</label>
+                        <select id="action" name="action" class="form-select" required>
+                            <option value="add">Add Game</option>
+                            <option value="modify">Modify Game</option>
+                            <option value="delete">Delete Game</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-custom w-100">Submit</button>
+                </form>
+                {% if message %}
+                <div class="alert alert-info message-box text-center">
+                    {{ message }}
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+

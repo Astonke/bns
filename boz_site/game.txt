@@ -1,0 +1,625 @@
+Israel / Liga Alef
+21:30
+6585
+Shimshon Kafr Qasim - Hapoel Ashdod FC
+10.00
+5.60
+1.23
+Romania / Romania Cup
+21:30
+9609
+AS FC Agricola Borcea - Fotbal Club FCSB
+17.50
+9.50
+1.08
+Spain / Tercera Division, Group 16
+21:30
+6747
+CD Tedeon - CD Varea
+6.20
+4.40
+1.42
+21:30
+3706
+CA River Ebro - Casalarreina CF
+1.85
+3.85
+3.45
+Italy / Serie C, Group B
+22:00
+6915
+Campobasso FC - Milan Futuro
+1.73
+3.55
+4.80
+Spain / Copa del Rey
+22:00
+5279
+Barakaldo CF - Racing Club de Ferrol
+2.32
+3.20
+3.35
+Spain / Tercera Division, Group 16
+22:00
+1993
+CD Autol - Naxara CD
+24.00
+8.80
+1.07
+Hungary / NB I
+22:00
+2554
+Debreceni VSC - Ferencvarosi Budapest
+5.40
+4.10
+1.52
+Belgium / Reserve League
+22:00
+7837
+RFC Liege - KVC Westerlo
+2.21
+4.10
+2.55
+Spain / Copa del Rey
+22:00
+2910
+FC Andorra - FC Cartagena
+2.10
+3.35
+3.80
+22:00
+5846
+SD Ponferradina - CD Castellon
+3.20
+3.30
+2.34
+Spain / Tercera Division, Group 4
+22:00
+9796
+Touring KE - AD San Viator
+1.44
+4.20
+6.20
+Czech Republic / 1. Liga
+22:00
+1466
+FC Viktoria Plzen - FK Teplice
+1.36
+4.80
+7.80
+Switzerland / Schweizer Cup
+22:00
+3899
+FC Aarau - Etoile Carouge FC
+1.88
+3.85
+3.35
+Spain / Copa del Rey
+22:00
+2422
+Marbella FC - Burgos CF
+3.90
+3.45
+2.03
+England / Premier League
+22:30
+7482
+Fulham FC - Brighton & Hove Albion
+2.46
+3.75
+2.75
+Spain / Tercera Division, Group 4
+22:30
+9589
+Urduliz FT - CD Basconia
+3.50
+3.45
+1.93
+Switzerland / Schweizer Cup
+22:30
+9819
+AC Bellinzona - FC St. Gallen 1879
+5.00
+4.10
+1.54
+22:30
+4294
+FC Winterthur - Lausanne-Sport
+4.30
+4.40
+1.75
+Belgium / Beker van Belgie
+22:30
+5511
+RSC Anderlecht - KVC Westerlo
+1.43
+5.00
+5.80
+Spain / Tercera Division, Group 1
+23:00
+1589
+CD Valladares - Villalonga
+1.98
+3.35
+3.45
+Spain / Copa del Rey
+23:00
+2836
+UE Olot - Sevilla FC
+11.00
+5.60
+1.29
+Italy / Coppa Italia
+23:00
+1619
+Lazio Rome - SSC Napoli
+2.50
+3.40
+2.70
+Spain / Copa del Rey
+23:00
+6109
+UB Conquense - Real Sociedad San Sebastian
+20.00
+7.80
+1.16
+23:00
+5033
+Club Deportiva Minera - Deportivo Alaves
+9.60
+5.40
+1.33
+England / Premier League
+23:15
+1362
+AFC Bournemouth - Tottenham Hotspur
+2.43
+4.00
+2.65
+Portugal / Primeira Liga
+23:15
+2211
+Moreirense FC - Sporting Lisbon
+9.40
+5.40
+1.28
+Time
+ID
+Home - Away
+1
+X
+2
+Spain / Tercera Division, Group 12
+00:00
+9437
+UD Tamaraceite - UD Villa Santa Brigida
+1.81
+3.45
+4.00
+Brazil / Brasileiro Serie A
+02:00
+8294
+Fluminense FC RJ - Cuiaba Esporte Clube MT
+1.40
+4.30
+8.40
+02:00
+9339
+CA Paranaense PR - Red Bull Bragantino SP
+2.01
+3.40
+3.60
+Colombia / Primera A, Clausura
+02:30
+6659
+Atletico Nacional Medellin - AD Pasto
+1.65
+3.50
+5.00
+04:30
+3487
+Millonarios FC - Independiente Santa Fe
+1.71
+3.25
+5.20
+Mexico / Primera Division, Apertura
+05:00
+3099
+CF America - CF Cruz Azul
+3.05
+2.90
+2.50
+El Salvador / Primera Division, Apertura
+05:00
+5570
+Alianza FC San Salvador - AD Isidro Metapan
+1.75
+3.25
+4.80
+Guatemala / Liga Nacional. Apertura
+05:00
+3843
+Antigua GFC - CSD Xelaju MC
+1.96
+2.90
+4.20
+El Salvador / Primera Division, Apertura
+05:00
+9141
+Municipal Limeno - CD. Cacahuatique
+2.25
+2.85
+3.35
+Indonesia / Liga 1
+11:30
+9405
+Borneo Samarinda - PSIS Semarang
+1.40
+4.20
+7.20
+11:30
+3247
+Persik Kediri - Madura United
+1.69
+3.65
+4.50
+Bangladesh / Premier League
+11:30
+6968
+Mohammedan SC Dhaka - Bashundhara Kings
+2.55
+3.60
+2.38
+Australia / A-League
+11:35
+3801
+Brisbane Roar FC - Melbourne City FC
+2.80
+3.50
+2.22
+Spain / Tercera Division, Group 7
+13:00
+4858
+RCD Carabanchel - SAD Villaverde San Andres
+2.55
+3.20
+2.60
+Spain / Tercera Division, Group 13
+13:00
+5790
+Deportivo Maritimo - Union Molinense CF 2020
+13.00
+6.20
+1.18
+Spain / Tercera Division, Group 4
+13:15
+8153
+CD Santurtzi KE - CD Padura
+1.86
+3.40
+3.85
+Israel / Liga Alef
+13:30
+6950
+Hapoel Migdal Haemeq - Maccabi Kiryat Ata-Bialik
+2.00
+3.35
+3.40
+13:30
+4761
+Maccabi Ironi Ashdod FC - FC Tzeirey Tira
+1.56
+3.70
+5.60
+Spain / Tercera Division, Group 6
+13:30
+7685
+UD Vall de Uxo - UD Castellonense
+2.09
+3.20
+3.35
+Spain / Tercera Division, Group 13
+13:30
+5476
+CF Santomera - Alcantarilla FC
+1.35
+4.40
+8.00
+Spain / Tercera Division, Group 6
+13:30
+8890
+AC Torrellano - Atletico Levante UD
+2.08
+3.25
+3.30
+Spain / Tercera Division, Group 7
+13:30
+3963
+Rayo Vallecano B - AD Alcorcon B
+2.65
+3.25
+2.48
+Israel / Liga Alef
+13:35
+5850
+FC Jerusalem - Ironi Modiin
+2.95
+3.15
+2.31
+13:40
+3560
+Hapoel Herzelia FC - Maccabi Y.
+2.36
+3.35
+2.75
+Spain / Tercera Division, Group 3
+13:45
+5868
+AD Siete Villas - UD Samano
+4.30
+3.55
+1.75
+Spain / Tercera Division, Group 5
+13:45
+1760
+UE Tona - CP San Cristobal
+1.85
+3.40
+3.90
+Spain / Tercera Division, Group 16
+14:00
+7432
+Pena Balsamaiso CF - SD Oyonesa
+2.36
+3.30
+2.75
+Spain / Tercera Division, Group 2
+14:00
+8563
+CD Lealtad de Villaviciosa - CD Roces
+1.17
+6.40
+12.00
+Spain / Tercera Division, Group 13
+14:00
+3374
+Real Murcia Imperial FC - CD Bullense
+1.47
+4.20
+5.80
+Spain / Tercera Division, Group 2
+14:00
+3278
+UC Ceares - Urraca CF
+1.86
+3.40
+3.90
+Spain / Tercera Division, Group 5
+14:00
+7260
+CE L'Hospitalet - AE Prat
+1.95
+3.25
+3.70
+Spain / Tercera Division, Group 1
+14:00
+1345
+Polvorin FC - SD Sarriana
+2.60
+3.15
+2.60
+Spain / Tercera Division, Group 12
+14:00
+1497
+Arucas CF - UD Lanzarote
+2.60
+3.10
+2.60
+Spain / Tercera Division, Group 17
+14:00
+5550
+CD Cuarte - Andorra CF
+1.89
+3.30
+3.85
+Spain / Tercera Division, Group 15
+14:00
+8805
+FC Bidezarra - AD San Juan Pamplona
+2.30
+3.20
+2.90
+Spain / Tercera Division, Group 11
+14:00
+1984
+UD Collerense - CD Llosetense
+1.92
+3.30
+3.75
+Spain / Tercera Division, Group 9
+14:00
+8289
+CD Huetor Vega - UDC Torredonjimeno
+1.48
+3.95
+6.20
+Spain / Tercera Division, Group 7
+14:00
+7819
+CD Galapagar - Aravaca CF
+2.17
+3.25
+3.10
+Israel / Liga Alef
+14:00
+3412
+Hapoel Azor FC - AS Nordia Jerusalem
+2.80
+3.35
+2.31
+Spain / Tercera Division, Group 17
+14:00
+6333
+CD Fuentes - CF Calamocha
+2.95
+3.15
+2.32
+Spain / Tercera Division, Group 1
+14:00
+9202
+Racing Club Villalbes - Viveiro CF
+1.47
+3.90
+6.60
+Spain / Tercera Division, Group 2
+14:00
+9421
+Caudal Deportivo - L'Entregu CF
+1.32
+4.40
+9.20
+Spain / Tercera Division, Group 3
+14:00
+4209
+SD Atletico Albericia - SD Torina
+1.72
+3.55
+4.40
+Spain / Tercera Division, Group 2
+14:30
+2729
+Real Oviedo Vetusta - CD Praviano
+1.25
+5.20
+10.00
+Iraq / Iraqi League
+14:30
+7167
+AL Karma - AL Naft Maysan
+2.45
+3.15
+2.90
+Spain / Tercera Division, Group 8
+14:30
+3614
+Palencia CF - UD Santa Marta
+2.13
+3.25
+3.20
+Spain / Tercera Division, Group 4
+14:30
+3520
+SD Eibar C - Club Portugalete
+3.30
+3.20
+2.11
+Romania / Liga 2
+14:30
+4361
+FC Bihor Oradea - AFC Chindia Targoviste
+2.02
+3.20
+3.55
+Spain / Tercera Division, Group 3
+14:30
+8064
+CD Bezana - CD Cayon
+2.22
+3.15
+3.10
+Israel / Liga Alef
+14:30
+9009
+SC Hapoel Lod - Holon Yermiyahu FC
+3.25
+3.55
+2.00
+Spain / Tercera Division, Group 18
+14:30
+3521
+CD Azuqueca - CD Marchamalo
+1.94
+3.25
+3.75
+Romania / Liga 3
+15:00
+4152
+CS Viitorul Daesti - ACS Speed Academy Pitesti
+2.33
+3.65
+2.60
+Thailand / Thai League 2
+15:00
+7091
+Suphanburi FC - Chainat Hornbill FC
+4.10
+3.50
+1.78
+Indonesia / Liga 1
+15:00
+2307
+Semen Padang FC - Persija Jakarta
+4.20
+3.45
+1.78
+Romania / Liga 3
+15:00
+9973
+FC Pucioasa - CS Tunari
+11.00
+5.60
+1.22
+Spain / Tercera Division, Group 12
+15:00
+1406
+UD San Fernando - CD Mensajero
+1.43
+4.40
+6.20
+Romania / Liga 3
+15:00
+3140
+Csc Peciu Nou - ACS Viitorul Arad
+1.41
+4.60
+6.00
+Spain / Tercera Division, Group 10
+15:00
+9872
+Sevilla FC C - AD Ceuta FC B
+2.85
+3.15
+2.39
+Romania / Liga 3
+15:00
+5931
+FC Unirea Dej - ACS Targu Mures 1898
+2.05
+3.55
+3.10
+15:00
+7285
+Csm Ramnicu Sarat - Csm Adjud 1946
+1.57
+4.00
+4.80
+Spain / Tercera Division, Group 8
+15:00
+2769
+CD Mirandes B - CD Palencia Cristo Atletico
+2.55
+3.00
+2.75
+Romania / Liga 3
+15:00
+2102
+Csl Stefanestii de Jos - ACS Petrolul 52 2
+1.98
+3.30
+3.55
+15:00
+1445
+SC Popesti Leordeni - ACS Recolta Gheorghe Doja
+1.62
+3.85
+4.80

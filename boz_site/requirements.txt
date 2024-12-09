@@ -1,0 +1,8 @@
+#bs4
+requests
+encron
+django
+bs4
+selenium
+django-cors-headers
+whitenoise

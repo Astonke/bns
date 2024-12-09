@@ -1,0 +1,44 @@
+#!/bin/bash
+set -e
+#'/home/user/bozbet/mysite/media/shell_scripts/start'
+wkd=$(pwd)
+pathx=/home/aston/bozbet/bozbet/zsite/boz_site
+
+html_dir=$pathx/app/templates
+root_project=$pathx
+echo $root_project
+#html_dir=/home/user/bozbet/mysite/app/templates
+cp $html_dir/home_def.html $html_dir/temp.html
+#./run.sh
+echo ' Bozbet _config setup...'
+
+echo ' updating football data..'
+sleep 1
+
+python3 $root_project/app/scrap_ft.py
+echo "data received from scrap.."
+echo 'moding page file..'
+
+#modifieng index.html with the new data
+bash $root_project/media/shell_scripts/updater
+#./game_checker &
+#echo "game_checker_activated"
+
+echo 'Done...'
+#echo 'copying to apache port 80'
+#echo 'going online...'
+sleep 1
+
+#copy page to apache then tunnel with ngrok
+#./global 
+cp $html_dir/temp.html  $html_dir/def.html
+#python3 $root_project/manage.py runserver #0.0.0.0:8000
+#live-server --open=index.html --no-browser &
+
+#apache host
+#echo 'enter root psk >>'
+#sudo cp index.html /var/www/html/index.html
+#sudo apt install apache2
+#sudo systemctl start apache2.service
+#ngrok config add-authtoken 2PCOp9A46Cvi0Kts1xNGhssbDJb_25WR6WBT5qRtysseif5Ao
+#ngrok http --domain=drum-clear-hawk.ngrok-free.app 80 &

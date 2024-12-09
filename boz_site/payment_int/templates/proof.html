@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Payment Proof</title>
+    {% load static%}
+    <style>
+        body, html {
+            background-image:url({% static "nexafix.webp" %})
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        .container {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+
+        input, textarea {
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 15px;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+        .msg{
+            border:1px solid black;
+            background-color:aqua;
+        }
+    </style>
+</head>
+<body>
+
+
+<div class="container">
+    <h2>Submit Proof of Payment</h2>
+    <form method="POST">
+        {% csrf_token %}
+        <label for="proof_of_payment">Proof of Payment</label>
+        <textarea id="proof_of_payment" name="proof_of_payment" rows="5" placeholder='paste message..' required></textarea>
+
+        <!--<label for="email">Your Email</label>-->
+        <input type="email" id="email" name="email" placeholder='Your email..' required>
+
+        <!--<label for="mobile_number">Your Mobile Number</label>-->
+        <input type="tel" id="mobile_number" name="mobile_number" placeholder='mobile no...' required pattern="[0-9]{10,15}" placeholder="Enter mobile number">
+        <div class='msg'>
+            {% if messages %}
+                        {% for message in messages %}
+                            <div class="alert-success">{{ message }}</div><br>
+                        {% endfor %}
+            {% endif %}
+        </div><br>
+
+        <button type="submit" onclick='redi()'>Submit Proof</button>
+    </form>
+</div>
+
+<script>
+    function get_enc_text(){
+        // Get the current URL
+    const currentUrl = window.location.href;
+
+    // Split the URL by '/' and filter out any empty strings
+    const parts = currentUrl.split('/').filter(Boolean);
+
+    // Find the longest string in the URL parts
+    const longestString = parts.reduce((longest, current) => 
+        current.length > longest.length ? current : longest, "");
+
+    return longestString;
+        }
+
+    function redi() {
+        window.location.href=`/home/${get_enc_text()}/`
+    }
+    
+</script>
+</body>
+</html>

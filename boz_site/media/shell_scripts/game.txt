@@ -1,0 +1,615 @@
+Australia / U23 Victoria Premier League 1
+11:15
+3419
+FC Bulleen Lions U23 - Melbourne City FC U23
+2.05
+4.30
+2.65
+China / China League 2
+12:00
+2614
+Guangxi Hengchen FC - Hunan Xiangtao
+2.08
+3.45
+3.10
+Australia / NPL 2, Victoria
+13:30
+6232
+Kingston City FC - Brunswick City SC
+2.07
+4.00
+2.80
+13:30
+6896
+FC Bulleen Lions - Melbourne City FC
+2.10
+4.00
+2.75
+Egypt / Premier League
+16:00
+3104
+National Bank of Egypt SC - Baladiyyat AL Mehalla
+1.56
+4.00
+5.40
+Norway / 3rd Division Group 4
+16:00
+2362
+Tiller IL - Stabaek Fotball 2
+2.70
+4.10
+2.09
+Norway / 2nd Division Group 2
+17:00
+8665
+IK Junkeren - Valerenga IF 2
+1.45
+4.90
+5.00
+Internationals / Club Friendly Games
+18:00
+4271
+FK Borac Banja Luka - FC Uta Arad
+1.49
+4.10
+5.60
+Egypt / Premier League
+19:00
+7380
+El Dakhleya Sc - Zed FC
+5.80
+3.70
+1.59
+Norway / 3rd Division Group 3
+19:00
+6013
+Ullern - Mjoendalen 2
+1.20
+7.20
+8.40
+Internationals / Club Friendly Games
+19:00
+3031
+Legia Warszawa - CS Universitatea Craiova
+1.64
+3.90
+4.40
+Finland / Suomen Cup
+19:00
+7912
+SJK Akatemia - Turun Palloseura
+5.20
+4.10
+1.53
+Norway / 3rd Division Group 2
+19:00
+7721
+Brodd - Start 2
+1.27
+6.20
+7.20
+Egypt / Premier League
+19:00
+6081
+Pharco FC - Al Ittihad Al Sakandary
+2.90
+3.00
+2.55
+Norway / 3rd Division Group 2
+19:00
+8173
+Sandnes Ulf 2 - FK Vidar
+5.00
+5.40
+1.42
+Internationals / Club Friendly Games
+20:00
+8434
+Apeldoorn CSV - Fotbal Club FCSB
+35.00
+12.00
+1.02
+Sweden / Superettan
+20:00
+1258
+Landskrona BoIS - Orgryte IS
+1.61
+3.75
+4.90
+Sweden / Div 1, Norra
+20:00
+3774
+Orebro Syrianska IF - IF Karlstad Fotbol
+2.55
+3.45
+2.48
+Sweden / Superettan
+20:00
+5815
+Osters IF - Helsingborgs IF
+1.64
+3.85
+4.60
+Sweden / Damallsvenskan
+20:00
+5801
+IFK Norrkoping DFK - IF Brommapojkarna
+1.78
+3.65
+3.90
+Sweden / Div 1 Sodra
+20:00
+7489
+FC Trollhattan - Jonkopings Sodra IF
+1.95
+3.75
+3.20
+Sweden / Superettan
+20:00
+1352
+Orebro SK - Trelleborgs FF
+2.11
+3.45
+3.05
+Sweden / Division 2, Sodra Gotaland
+20:00
+5319
+FBK Balkan - Kristianstad FC
+3.20
+4.20
+1.85
+Faroe Islands / Premier League
+21:00
+5000
+Skala IF - 07 Vestur Sorvagur
+2.37
+3.60
+2.55
+Argentina / Primera B
+21:00
+8603
+CA Fenix Pilar - CSCD Laferrere
+2.11
+2.85
+3.75
+21:00
+8544
+Argentino de Quilmes - Deportivo Merlo
+1.74
+3.20
+5.00
+Uruguay / Segunda Division
+21:00
+1994
+Albion FC - Club Oriental de Football
+2.05
+3.20
+3.45
+Internationals / Euro Cup
+22:00
+22286
+Croatia - Italy
+3.20
+3.25
+2.38
+22:00
+71456
+Albania - Spain
+6.80
+4.70
+1.47
+Iceland / 2. deild
+22:15
+8380
+UMF Selfoss - Haukar Hafnarfjordur
+1.27
+6.80
+6.40
+Time
+ID
+Home - Away
+1
+X
+2
+Argentina / Primera B Nacional
+00:10
+6478
+Club Atletico Atlanta - Almirante Brown
+2.60
+2.90
+2.90
+Internationals / Copa America
+01:00
+8421
+Colombia - Paraguay
+1.67
+3.55
+5.40
+Brazil / Brasileiro Serie B
+01:00
+1880
+SC Recife PE - Gremio Novorizontino SP
+1.71
+3.40
+5.20
+Brazil / Copa Paulista
+01:00
+2938
+Botafogo FC SP - Monte Azul SP
+1.54
+4.10
+5.20
+Brazil / Brasileiro Serie C
+02:00
+1393
+AA Aparecidense GO - Nautico PE
+2.02
+3.05
+3.70
+02:00
+8808
+ABC FC RN - Clube do Remo PA
+2.08
+3.00
+3.60
+Chile / Copa Chile
+02:00
+4218
+San Antonio Unido - Universidad de Chile
+8.00
+4.60
+1.33
+Argentina / Torneo Federal A
+02:30
+2094
+CSB Atenas - Deportivo Camioneros
+2.31
+2.95
+3.10
+Internationals / Copa America
+04:00
+8958
+Brazil - Costa Rica
+1.12
+8.40
+19.00
+USA / USL League Two
+04:00
+6644
+Utah United - Albion SC Colorado
+2.25
+3.45
+2.80
+Vietnam / V-League
+13:00
+2365
+Haiphong FC - Hanoi FC
+2.38
+3.50
+2.60
+Australia / NPL, New South Wales
+13:00
+4668
+NWS Spirit - Sutherland Sharks
+1.87
+3.80
+3.40
+Vietnam / V-League
+13:00
+1215
+Dong A Thanh Hoa - Viettel FC
+2.04
+3.35
+3.35
+13:00
+4543
+Ho Chi Minh City FC - Quang Nam FC
+2.50
+3.55
+2.45
+13:00
+3697
+Hanoi Police FC - Hoang Anh Gia Lai
+1.71
+3.70
+4.30
+13:00
+1312
+B. Binh Duong - Binh Dinh FC
+2.80
+3.40
+2.30
+13:00
+5088
+Song Lam Nghe An - Hong Linh Ha Tinh FC
+1.96
+3.40
+3.45
+Republic of Korea / K-League Classic
+13:30
+2725
+Suwon FC - Gwangju FC
+2.90
+3.45
+2.30
+Republic of Korea / K-League 2
+13:30
+3017
+Seongnam Ilhwa - Chungnam Asan FC
+2.33
+3.25
+2.80
+13:30
+9269
+Gyeongnam FC - FC Anyang
+2.75
+3.35
+2.34
+Republic of Korea / K-League Classic
+13:30
+3328
+Gimcheon Sangmu FC - Daejeon Citizen FC
+1.90
+3.65
+3.75
+Republic of Korea / K-League 2
+13:30
+6229
+Jeonnam Dragons - Suwon Bluewings
+3.00
+3.35
+2.17
+China / Chinese Super League
+14:00
+7352
+Henan - Qingdao West Coast FC
+1.37
+5.20
+6.60
+14:35
+6691
+Nantong Zhiyun - Tianjin Jinmen Tiger
+3.55
+3.50
+1.98
+14:35
+8980
+Shenzhen Peng City - Zhejiang FC
+3.50
+3.70
+1.95
+15:00
+7870
+Wuhan Three Towns FC - Shanghai Port FC
+7.20
+5.60
+1.33
+Latvia / Virsliga
+18:00
+9873
+FK Liepaja - FK Metta / Lu
+1.71
+3.55
+4.50
+Internationals / Euro Cup
+19:00
+24446
+France - Poland
+1.30
+5.80
+10.00
+Egypt / Premier League
+19:00
+5372
+AL Ahly SC (Egy) - Zamalek SC
+1.70
+3.75
+4.60
+Internationals / Euro Cup
+19:00
+21307
+Netherlands - Austria
+2.11
+3.15
+3.60
+Sweden / Div 1 Sodra
+20:00
+4144
+Lunds BK - Torns IF
+1.43
+4.50
+6.00
+Iceland / Urvalsdeild, Women
+21:00
+3598
+Thor/KA - Valur Reykjavik
+3.80
+4.00
+1.72
+21:00
+2103
+Keflavik IF - Breidablik Kopavogur
+11.00
+6.20
+1.20
+21:00
+2517
+Throttur Reykjavik - Fylkir Reykjavik
+1.24
+5.60
+9.20
+Morocco / Morocco Cup
+22:00
+5622
+Raja Casablanca Athletic - Mouloudia Club of Oujda
+1.22
+5.40
+12.00
+Internationals / Euro Cup
+22:00
+58509
+Denmark - Serbia
+2.14
+3.50
+3.15
+22:00
+49382
+England - Slovenia
+1.36
+5.00
+9.40
+Time
+ID
+Home - Away
+1
+X
+2
+Internationals / Copa America
+01:00
+3249
+Peru - Canada
+3.10
+3.20
+2.31
+Brazil / Brasileiro Serie B
+01:00
+8548
+America FC MG - Avai FC SC
+1.64
+3.65
+5.40
+01:00
+8909
+Mirassol FC SP - Santos FC SP
+2.75
+2.95
+2.75
+Brazil / Brasileiro Serie D
+01:00
+3114
+Real Noroeste ES - Democrata Sete Lagoas FC MG
+2.75
+3.00
+2.55
+Brazil / Brasileiro Serie B
+03:00
+3290
+AA Ponte Preta SP - Ceara SC CE
+2.75
+2.95
+2.75
+03:30
+9202
+Amazonas FC AM - Coritiba FC PR
+2.95
+2.80
+2.70
+Internationals / Copa America
+04:00
+5737
+Chile - Argentina
+7.20
+4.20
+1.44
+Japan / J.League
+13:00
+9632
+Sanfrecce Hiroshima - Albirex Niigata
+1.54
+4.10
+5.60
+13:00
+7787
+Jubilo Iwata - Tokyo Verdy
+2.65
+3.25
+2.65
+13:00
+6639
+Cerezo Osaka - Sagan Tosu
+1.74
+3.75
+4.30
+13:00
+1636
+FC Tokyo - Hokkaido Consadole Sapporo
+1.89
+3.65
+3.75
+13:00
+4296
+Kashima Antlers - Gamba Osaka
+2.14
+3.20
+3.45
+Japan / J.League 2
+13:00
+5032
+V-Varen Nagasaki - Iwaki FC
+2.01
+3.40
+3.35
+Japan / J.League
+13:00
+9764
+Nagoya Grampus - Urawa Red Diamonds
+2.85
+3.15
+2.50
+13:00
+1923
+Vissel Kobe - Machida Zelvia
+2.12
+3.30
+3.40
+13:00
+3428
+Avispa Fukuoka - Yokohama F Marinos
+2.75
+3.30
+2.50
+13:00
+8728
+Kawasaki Frontale - Shonan Bellmare
+1.85
+3.65
+3.90
+13:00
+3045
+Kyoto Sanga FC - Kashiwa Reysol
+3.35
+3.25
+2.16
+Republic of Korea / K-League 2
+13:30
+1039
+Cheonan City FC - Bucheon FC 1995
+3.15
+2.95
+2.29
+Republic of Korea / K-League Classic
+13:30
+4501
+Ulsan Hyundai FC - Daegu FC
+1.64
+3.90
+4.90
+13:30
+7503
+FC Seoul - Gangwon FC
+2.06
+3.45
+3.40
+Republic of Korea / K-League 2
+13:30
+9502
+Gimpo FC - Chungbuk Cheongju FC
+2.49
+2.95
+2.85
+13:30
+6008
+Seoul E-Land FC - Ansan Greeners FC
+1.69
+3.50
+4.70
